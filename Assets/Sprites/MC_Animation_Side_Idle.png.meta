@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 300a6de98ae566c43852e54934780c66
+guid: 19f5fc981fa617a4da16ef80f231a08c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5508472335913808860
-    second: MC_Animation_IdleFront_0
+      213: -327371690076251005
+    second: MC_Animation_Side_Idle_0
   - first:
-      213: 5424040125565800892
-    second: MC_Animation_IdleFront_1
+      213: 125717805917285790
+    second: MC_Animation_Side_Idle_1
   - first:
-      213: -5978661812049900550
-    second: MC_Animation_IdleFront_2
+      213: -4826779836373807695
+    second: MC_Animation_Side_Idle_2
+  - first:
+      213: -5782050078818240209
+    second: MC_Animation_Side_Idle_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_Animation_IdleFront_0
+      name: MC_Animation_Side_Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -127,21 +130,21 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 9
-      pivot: {x: 0.5, y: -0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 42c8aca7899fd83b0800000000000000
-      internalID: -5508472335913808860
+      spriteID: 38c5c7fae21f47bf0800000000000000
+      internalID: -327371690076251005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Animation_IdleFront_1
+      name: MC_Animation_Side_Idle_1
       rect:
         serializedVersion: 2
         x: 64
@@ -149,21 +152,21 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 9
-      pivot: {x: 0.5, y: -0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb190d3a1cf064b40800000000000000
-      internalID: 5424040125565800892
+      spriteID: e9d24abada3aeb100800000000000000
+      internalID: 125717805917285790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Animation_IdleFront_2
+      name: MC_Animation_Side_Idle_2
       rect:
         serializedVersion: 2
         x: 0
@@ -171,21 +174,21 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 9
-      pivot: {x: 0.5, y: -0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: afb829c12c6870da0800000000000000
-      internalID: -5978661812049900550
+      spriteID: 1bdcbebef45d30db0800000000000000
+      internalID: -4826779836373807695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Animation_IdleFront_3
+      name: MC_Animation_Side_Idle_3
       rect:
         serializedVersion: 2
         x: 64
@@ -193,15 +196,15 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 9
-      pivot: {x: 0.5, y: -0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d0bb90266002fbd42a99402941f28325
-      internalID: 2018663897
+      spriteID: f29f482861802cfa0800000000000000
+      internalID: -5782050078818240209
       vertices: []
       indices: 
       edges: []
@@ -210,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 16af6ee4e51ca314ea3644b8ae5102a5
+    spriteID: 00c9ded96965a9d4395eb2dd266ef7be
     internalID: 0
     vertices: []
     indices: 
@@ -220,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MC_Animation_IdleFront_0: -5508472335913808860
-      MC_Animation_IdleFront_1: 5424040125565800892
-      MC_Animation_IdleFront_2: -5978661812049900550
-      MC_Animation_IdleFront_3: 2018663897
+      MC_Animation_Side_Idle_0: -327371690076251005
+      MC_Animation_Side_Idle_1: 125717805917285790
+      MC_Animation_Side_Idle_2: -4826779836373807695
+      MC_Animation_Side_Idle_3: -5782050078818240209
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

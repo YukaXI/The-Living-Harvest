@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 300a6de98ae566c43852e54934780c66
+guid: 7766c56053190c14ea122e0458a06858
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5508472335913808860
-    second: MC_Animation_IdleFront_0
+      213: -9025634518707092181
+    second: MC_Animation_Side_Walk_0
   - first:
-      213: 5424040125565800892
-    second: MC_Animation_IdleFront_1
+      213: -6030882585838137273
+    second: MC_Animation_Side_Walk_1
   - first:
-      213: -5978661812049900550
-    second: MC_Animation_IdleFront_2
+      213: -7240370205881223767
+    second: MC_Animation_Side_Walk_2
+  - first:
+      213: 1101960700599984756
+    second: MC_Animation_Side_Walk_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,54 +122,54 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_Animation_IdleFront_0
+      name: MC_Animation_Side_Walk_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 0
         width: 64
         height: 64
       alignment: 9
-      pivot: {x: 0.5, y: -0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 42c8aca7899fd83b0800000000000000
-      internalID: -5508472335913808860
+      spriteID: b25c5ff99318eb280800000000000000
+      internalID: -9025634518707092181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Animation_IdleFront_1
+      name: MC_Animation_Side_Walk_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 0
         width: 64
         height: 64
       alignment: 9
-      pivot: {x: 0.5, y: -0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb190d3a1cf064b40800000000000000
-      internalID: 5424040125565800892
+      spriteID: 740570dbd300e4ca0800000000000000
+      internalID: -6030882585838137273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Animation_IdleFront_2
+      name: MC_Animation_Side_Walk_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 128
         y: 0
         width: 64
         height: 64
@@ -178,30 +181,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: afb829c12c6870da0800000000000000
-      internalID: -5978661812049900550
+      spriteID: 9a5b02ca8a9058b90800000000000000
+      internalID: -7240370205881223767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Animation_IdleFront_3
+      name: MC_Animation_Side_Walk_3
       rect:
         serializedVersion: 2
-        x: 64
+        x: 191
         y: 0
         width: 64
         height: 64
       alignment: 9
-      pivot: {x: 0.5, y: -0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d0bb90266002fbd42a99402941f28325
-      internalID: 2018663897
+      spriteID: 472e3b33b63fa4f00800000000000000
+      internalID: 1101960700599984756
       vertices: []
       indices: 
       edges: []
@@ -210,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 16af6ee4e51ca314ea3644b8ae5102a5
+    spriteID: 6d4d88d8f4ed67f45a66dea1a5de5338
     internalID: 0
     vertices: []
     indices: 
@@ -220,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MC_Animation_IdleFront_0: -5508472335913808860
-      MC_Animation_IdleFront_1: 5424040125565800892
-      MC_Animation_IdleFront_2: -5978661812049900550
-      MC_Animation_IdleFront_3: 2018663897
+      MC_Animation_Side_Walk_0: -9025634518707092181
+      MC_Animation_Side_Walk_1: -6030882585838137273
+      MC_Animation_Side_Walk_2: -7240370205881223767
+      MC_Animation_Side_Walk_3: 1101960700599984756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
