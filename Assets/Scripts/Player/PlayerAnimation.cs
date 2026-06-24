@@ -9,7 +9,7 @@ namespace Project
 
 public class PlayerAnimation : MonoBehaviour
 {
-    private static readonly int AnimatorHash_MovementType = Animator.StringToHash("MovementType");
+    private static readonly int AnimatorHash_MovementType = Animator.StringToHash("Movement");
     private static readonly int AnimatorHash_MovementDirX = Animator.StringToHash("dirX");
     private static readonly int AnimatorHash_MovementDirY = Animator.StringToHash("dirY");
     
@@ -28,6 +28,11 @@ public class PlayerAnimation : MonoBehaviour
     {
         if (_animators.Length < 1)
             _animators = GetComponentsInChildren<Animator>(true);
+    }
+    
+    private void Update()
+    {
+        HandleAnimations();
     }
 
     private void HandleLookDirection(Vector2 moveDir)
