@@ -13,7 +13,10 @@ public class MenuController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         { 
-            if(!menuCanvas.activeSelf && PauseController.IsGamedPaused)
+            if(!menuCanvas.activeSelf && PauseController.IsGamePaused)
+            {
+                return;
+            }
             menuCanvas.SetActive(!menuCanvas.activeSelf);
             PauseController.SetPause(menuCanvas.activeSelf);
         }

@@ -20,7 +20,7 @@ public bool CanInteract()
 
 public void Interact()
 {
-    //if (dialogueData == null || (PauseController.IsGamePaused && !isDialogueActive))
+    if (dialogueData == null || (PauseController.IsGamePaused && !isDialogueActive))
         return;
 }
 }
