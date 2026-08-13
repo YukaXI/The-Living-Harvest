@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class NPC : MonoBehaviour
+public class NPC : MonoBehaviour, IInteractable
 {
 public NPCDialogue dialogueData;
 public GameObject dialoguePanel;
@@ -12,5 +12,15 @@ public Image portraitImage;
 private int dialogueIndex;
 private bool isTyping, isDialogueActive;
 
+public bool CanInteract()
+{
+    return !isDialogueActive;
+}
 
+
+public void Interact()
+{
+    //if (dialogueData == null || (PauseController.IsGamePaused && !isDialogueActive))
+        return;
+}
 }
