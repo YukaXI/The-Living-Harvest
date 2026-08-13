@@ -27,7 +27,7 @@ public void Interact()
     
     if(isDialogueActive)
     {
-       //NextLine
+        NextLine();
     }
     else
     {
@@ -63,7 +63,7 @@ void NextLine()
     }
     else
     {
-        //EndDialogue
+        EndDialogue();
     }
 }
 
@@ -82,8 +82,16 @@ void NextLine()
 
     if (dialogueData.autoProgressLines.Length > dialogueIndex && dialogueData.autoProgressLines[dialogueIndex])
     {
-       yield return new WaitForSeconds(dialogueData.autoProgressDelay); 
+       yield return new WaitForSeconds(dialogueData.autoProgressDelay);
+       NextLine();
     }
 }
-    
+ public void EndDialogue()
+ {
+    StopAllCoroutines();
+    isDialogueActive = false;
+    dialogueText.SetText("");
+    dialoguePanel.SetActive(false);
+    PauseController.SetPause(false);
+ }
 }
