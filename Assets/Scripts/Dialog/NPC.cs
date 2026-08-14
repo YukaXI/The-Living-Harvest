@@ -3,9 +3,11 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
+using Project.Player;
 
 public class NPC : MonoBehaviour, IInteractable
 {
+    //Setup für die Hierarchy und Aufbau des Dialoges
    public NPCDialogue dialogueData;
    public GameObject dialoguePanel;
    public TMP_Text dialogueText, nameText;
@@ -13,6 +15,38 @@ public class NPC : MonoBehaviour, IInteractable
 
    private int dialogueIndex;
    private bool isTyping, isDialogueActive;
+
+   //Interaction
+   private bool isPlayerInRange;
+   private PlayerInputManager inputManager;
+   
+   private void Start()
+   {
+       inputManager = FindAnyObjectByType<PlayerInputManager>();
+   }
+   private void Update()
+   {
+       if (isPlayerInRange && inputManager != null && inputManager.IsInteractPressed)
+       {
+           Interact();
+       }
+   }
+   
+   private void OnTriggerEnter2D(Collider2D collision)
+   {
+       if (collision.CompareTag("Player"))
+       {
+           isPlayerInRange = true;
+       }
+   }
+   
+   private void OnTriggerExit2D(Collider2D collision)
+   {
+       if (collision.CompareTag("Player"))
+       {
+           isPlayerInRange = false;
+       }
+   }
 
 public bool CanInteract()
 {
@@ -95,3 +129,5 @@ void NextLine()
     PauseController.SetPause(false);
  }
 }
+
+//Quelle: https://www.youtube.com/watch?v=eSH9mzcMRqw&t=183s und https://www.youtube.com/watch?v=MPP9GLp44Pc&t=631s
