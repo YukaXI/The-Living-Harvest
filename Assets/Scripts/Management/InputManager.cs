@@ -14,6 +14,8 @@ namespace Project.Player
 
         private InputAction _attackAction;
         
+        public bool IsInteractPressed => _inputSystemActions.Player.Interact.WasPressedThisFrame();
+        
         private void Awake()
         {
             _playerMovement = FindAnyObjectByType<PlayerMovement>();
