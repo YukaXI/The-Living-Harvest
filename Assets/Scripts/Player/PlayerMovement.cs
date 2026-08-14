@@ -51,6 +51,9 @@ namespace Project.Player
 
         private void Update()
         {
+            if (PauseController.IsGamePaused)
+                return;
+            
             if (timer > 0)
             {
                 timer -= Time.deltaTime;
@@ -59,6 +62,12 @@ namespace Project.Player
 
         private void Move(float deltaTime)
         {
+            if (PauseController.IsGamePaused)
+            {
+                _rigidbody.linearVelocity = Vector2.zero;
+                CurrentMovementDirection = Vector2.zero;
+                return;
+            }
             CurrentMovementDirection = _playerInputManager.PlayerActions.Move.ReadValue<Vector2>();
 
             _rigidbody.linearVelocity = CurrentMovementDirection * _baseSpeed;
