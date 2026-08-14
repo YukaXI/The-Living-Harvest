@@ -10,19 +10,21 @@ public class HealthBar : MonoBehaviour
     public TextMeshProUGUI healthBarValueText;
 
     public int maxHealth;
-    public int currHealth;
+    public int currentHealth;
 
     private void Awake()
     {
-        currHealth = maxHealth;
+        currentHealth = maxHealth;
     }
 
 
     private void Update()
     {
-        healthBarValueText.text = currHealth.ToString() + "/" + maxHealth.ToString();
+        healthBarValueText.text = currentHealth.ToString() + "/" + maxHealth.ToString();
 
-        healthBarSlider.value = currHealth;
+        healthBarSlider.value = currentHealth;
         healthBarSlider.maxValue = maxHealth;
     }
+    
+   
 }

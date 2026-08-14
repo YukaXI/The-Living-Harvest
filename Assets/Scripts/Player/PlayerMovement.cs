@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -33,7 +34,7 @@ namespace Project.Player
         [SerializeField] 
         private float timer;
         
-        
+        public bool isAttacking = false;
         
         public Rigidbody2D Rigidbody => _rigidbody;
         public Vector2 CurrentMovementDirection { get; private set; }
@@ -67,19 +68,33 @@ namespace Project.Player
         {
             if (timer <= 0)
             {
+                isAttacking = true;
                 timer = cooldown;
                 AnimationSetActionId(1);
+            }
+            
+            DealDamage();
+        }
 
-                Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, enemyLayer);
+        public void DealDamage()
+        {
+            isAttacking = false;
+            
+            Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, enemyLayer);
 
+            if (enemies.Length > 0)
+            {
+                enemies[0].GetComponent<EnemyHealth>().ChangeHealth(-damage);
+                Debug.Log("Enemie Damaged");
             }
         }
 
-        public void AttackEnde(InputAction.CallbackContext ctx)
+        private void OnDrawGizmosSelected()
         {
-            anim.SetBool("isAttacking", false);
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(attackPoint.position, weaponRange);
         }
-        
+
         private void AnimationSetActionId(int id)
         {
             anim.SetTrigger(HashActionTrigger); 
