@@ -17,15 +17,32 @@ public class EnemyMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         //if (isChasing == true)
         //{
-            Vector2 direction = (target.position - transform.position).normalized;
-            rb.linearVelocity = direction;
-        //}
+
+//if (enemyState != enemyState.knockback)
+        {
+            MovementState();
+        }
+        
     }
 
+    private void MovementState()
+    {
+        Vector2 direction = (target.position - transform.position).normalized;
+        rb.linearVelocity = direction;
+    }
+
+
+
+    public enum EnemyState
+    {
+        Knockback,
+        Chasing
+    }
+    
 /*private void OnTriggerEnter2D(Collider2D collision)
 {
     if (collision.gameObject.CompareTag("Player"))

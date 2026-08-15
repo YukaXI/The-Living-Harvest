@@ -14,8 +14,8 @@ namespace Project.Player
         
         #endregion
 
-        [SerializeField]
-        private GameObject _attackpointGM;
+        
+        public GameObject _attackpointGM;
         public Transform attackPoint;
         public float weaponRange = 1;
         public LayerMask enemyLayer;
@@ -44,6 +44,7 @@ namespace Project.Player
         private void Awake()
         {
             anim = GetComponentInChildren<Animator>();
+            _attackpointGM.SetActive(false);
         }
         
         private void FixedUpdate()
@@ -84,22 +85,10 @@ namespace Project.Player
                 
                 AnimationSetActionId(1);
             }
-            _attackpointGM.SetActive(false);
-            DealDamage();
-        }
-
-        public void DealDamage()
-        {
-            isAttacking = false;
             _attackpointGM.SetActive(true);
-            Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, enemyLayer);
-
-            if (enemies.Length > 0)
-            {
-                enemies[0].GetComponent<EnemyHealth>().ChangeHealth(-damage);
-                Debug.Log("Enemie Damaged");
-            }
+            //DealDamage();
         }
+        
 
         private void OnDrawGizmosSelected()
         {

@@ -30,7 +30,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0.055296946}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8181731969318113261}
   m_Father: {fileID: 1759047053881873490}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &343174343083991370
@@ -143,7 +144,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8181731969318113261}
   - {fileID: 1759047053881873490}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -186,6 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b95457f138d2d468f8d85c63cf428f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _attackpointGM: {fileID: 0}
   attackPoint: {fileID: 8181731969318113261}
   weaponRange: 1
   enemyLayer:
@@ -198,6 +199,7 @@ MonoBehaviour:
   _baseSpeed: 3
   cooldown: 0.6
   timer: 0
+  isAttacking: 0
 --- !u!114 &5926901194085190124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,12 +276,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6532323119452591820}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.481, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.481, z: -0.055296946}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 791831179217835809}
+  m_Father: {fileID: 8734140606288076011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8827506981358643777
 GameObject:
