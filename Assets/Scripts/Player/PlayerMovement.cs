@@ -14,6 +14,8 @@ namespace Project.Player
         
         #endregion
 
+        [SerializeField]
+        private GameObject _attackpointGM;
         public Transform attackPoint;
         public float weaponRange = 1;
         public LayerMask enemyLayer;
@@ -79,16 +81,17 @@ namespace Project.Player
             {
                 isAttacking = true;
                 timer = cooldown;
+                
                 AnimationSetActionId(1);
             }
-            
+            _attackpointGM.SetActive(false);
             DealDamage();
         }
 
         public void DealDamage()
         {
             isAttacking = false;
-            
+            _attackpointGM.SetActive(true);
             Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, enemyLayer);
 
             if (enemies.Length > 0)

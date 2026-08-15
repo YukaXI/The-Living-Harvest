@@ -24,5 +24,10 @@ public class EnemyHealth : MonoBehaviour
       {
          Destroy(gameObject);
       }
+      
+      else if (gameObject.CompareTag("EnemySpawn")  && currentHealth <= 0);
+      {
+         gameObject.SetActive(false);
+      }
    }
 }

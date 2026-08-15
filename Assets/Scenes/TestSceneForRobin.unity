@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 39701375}
   m_Layer: 12
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: EnemySpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -429,7 +429,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39701368}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -880,6 +880,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882371732}
   m_CullTransparentMesh: 1
+--- !u!1 &1095454044 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6532323119452591820, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
+  m_PrefabInstance: {fileID: 1562151098}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1369660213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,6 +1120,14 @@ PrefabInstance:
       value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 8347468179835537872, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
+      propertyPath: _attackpointGM
+      value: 
+      objectReference: {fileID: 1095454044}
+    - target: {fileID: 8347468179835537872, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
+      propertyPath: enemyLayer.m_Bits
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347468179835537872, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
       propertyPath: _playerInputManager
       value: 
       objectReference: {fileID: 1944739919}
@@ -1330,7 +1343,7 @@ GameObject:
   - component: {fileID: 1716903998}
   m_Layer: 12
   m_Name: Enemy (1)
-  m_TagString: Untagged
+  m_TagString: EnemySpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1342,7 +1355,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716903997}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
