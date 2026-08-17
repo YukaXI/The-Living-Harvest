@@ -697,8 +697,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1369660216}
   - component: {fileID: 1369660215}
-  - component: {fileID: 1369660214}
   - component: {fileID: 1369660217}
+  - component: {fileID: 1369660218}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -706,14 +706,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1369660214
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369660213}
-  m_Enabled: 1
 --- !u!20 &1369660215
 Camera:
   m_ObjectHideFlags: 0
@@ -824,6 +816,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1369660218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369660213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!95 &1478790043 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8744753655517657626, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
