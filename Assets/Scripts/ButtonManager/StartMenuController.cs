@@ -14,12 +14,4 @@ public void OnExitClick()
     Application.Quit();
     Debug.Log("Quit");
 }
-
-public void OnCreditsClick()
-{ 
-    if(CreditsMenu != null)
-    {
-        CreditsMenu.SetActive(true);
-    }
-}
 }
