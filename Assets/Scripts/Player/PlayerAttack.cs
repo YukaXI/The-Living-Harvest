@@ -18,7 +18,6 @@ public class PlayerAttack : MonoBehaviour
     public void DealDamage()
     {
         _playerMovement.isAttacking = false;
-        _playerMovement._attackpointGM.SetActive(false);
         Collider2D[] enemies = Physics2D.OverlapCircleAll(_playerMovement.attackPoint.position, _playerMovement.weaponRange, _playerMovement.enemyLayer);
 
         if (enemies.Length > 0)

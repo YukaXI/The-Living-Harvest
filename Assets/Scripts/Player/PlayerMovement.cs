@@ -9,13 +9,11 @@ namespace Project.Player
         #region Hash
         
         private static readonly int HashActionTrigger = Animator.StringToHash("ActionTrigger");
-        
         private static readonly int HashActionId = Animator.StringToHash("ActionId");
         
         #endregion
 
         
-        public GameObject _attackpointGM;
         public Transform attackPoint;
         public float weaponRange = 1;
         public LayerMask enemyLayer;
@@ -44,7 +42,6 @@ namespace Project.Player
         private void Awake()
         {
             anim = GetComponentInChildren<Animator>();
-            _attackpointGM.SetActive(false);
         }
         
         private void FixedUpdate()
@@ -85,7 +82,6 @@ namespace Project.Player
                 
                 AnimationSetActionId(1);
             }
-            _attackpointGM.SetActive(true);
             //DealDamage();
         }
         

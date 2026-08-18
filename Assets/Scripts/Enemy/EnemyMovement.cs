@@ -6,10 +6,12 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
 
     [SerializeField] private float speed;
-
+    
     private bool isChasing;
 
     public Transform target;
+    
+    public Vector2 CurrentMovementDirection { get; private set; }
 
 
     private void Awake()
@@ -31,9 +33,13 @@ public class EnemyMovement : MonoBehaviour
 
     private void MovementState()
     {
+       
+        
         Vector2 direction = (target.position - transform.position).normalized;
         rb.linearVelocity = direction;
     }
+
+    
 
 
 
