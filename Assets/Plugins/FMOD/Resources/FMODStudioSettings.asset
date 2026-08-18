@@ -380,8 +380,10 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: C:/Users/Anwender/Desktop/FMod/The Living Harvest.fspro
-  sourceBankPath: C:/Users/Anwender/Desktop/FMod/Build
+  sourceProjectPath: C:/Users/Anwender/Desktop/FMod/The Living Harvest (1)/The Living
+    Harvest/The Living Harvest.fspro
+  sourceBankPath: C:/Users/Anwender/Desktop/FMod/The Living Harvest (1)/The Living
+    Harvest/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -403,7 +405,8 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
+  MasterBanks:
+  - Master
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
