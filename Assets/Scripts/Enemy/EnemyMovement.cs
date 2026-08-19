@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
     private Transform player;
 
     [SerializeField] private float speed;
-    [SerializeField] private float stoppingDistance = 1f;
+    [SerializeField] private float stoppingDistance = 0f;
 
     private Animator _anim; 
     
@@ -39,31 +39,38 @@ public class EnemyMovement : MonoBehaviour
 
     private void MovementState()
     {
+        float distanceToTarget = Vector2.Distance(transform.position, target.position);
+        if (distanceToTarget <= stoppingDistance)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+        
         Vector2 direction = (target.position - transform.position).normalized;
         
-        if (target.position.x > transform.position.x && facingDirectionX == -1 || target.position.x < transform.position.x && facingDirectionX == 1)
-            
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
-            if (direction.x > 0 && facingDirectionX < 0)
+            int targetDirX = direction.x > 0 ? 1 : -1;
+            
+            if (facingDirectionX != targetDirX) 
             {
-                FlipX(1);
-                _anim.SetTrigger(SideAnimationHashTrigger);
-            }
-            else if (direction.x < 0 && facingDirectionX > 0)
-            {
-                FlipX(-1);
+                FlipX(targetDirX);
+                facingDirectionY = 0;
                 _anim.SetTrigger(SideAnimationHashTrigger);
             }
         }
         else
         {
-            if (direction.y > 0)
+            if (direction.y > 0 && facingDirectionY != 1)
             {
+                facingDirectionY = 1;
+                facingDirectionX = 0;
                 _anim.SetTrigger(BackAnimationHashTrigger);
             }
-            else if (direction.y < 0)
+            else if (direction.y < 0 && facingDirectionY != -1)
             {
+                facingDirectionY = -1;
+                facingDirectionX = 0;
                _anim.SetTrigger(FrontAnimationHashTrigger);
             }
         }
