@@ -5,10 +5,15 @@ public class EnemyHealth : MonoBehaviour
 {
    public int currentHealth;
    public int maxHealth;
+   
+   private Animator _anim;
+   private Rigidbody2D rb;
 
    private void Awake()
    {
       currentHealth = maxHealth;
+      _anim = GetComponent<Animator>();
+      rb = GetComponent<Rigidbody2D>();
    }
 
    public void ChangeHealth(int amount)
@@ -19,10 +24,19 @@ public class EnemyHealth : MonoBehaviour
       {
          currentHealth = maxHealth;
       }
+   }
 
-      else if (currentHealth <= 0)
+   private void Update()
+   {
+      if (currentHealth <= 0)
       {
-         Destroy(gameObject);
+         _anim.SetBool("isDead", true);
+         rb.linearVelocity = Vector2.zero;
       }
+   }
+
+   private void DestroyEnemy()
+   {
+      Destroy(this.gameObject);
    }
 }

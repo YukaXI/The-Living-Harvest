@@ -7,14 +7,24 @@ public class EnemyMovement : MonoBehaviour
     private static readonly int FrontAnimationHashTrigger = Animator.StringToHash("FrontTrigger");
     private static readonly int SideAnimationHashTrigger = Animator.StringToHash("SideTrigger");
     
+    private static readonly int AttackHashBool = Animator.StringToHash("isAttacking");
+    
     
     [SerializeField] private Rigidbody2D rb;
     private Transform player;
 
-    [SerializeField] private float speed;
-    [SerializeField] private float stoppingDistance = 0f; //Abstand zum Gegner 
+    [SerializeField] private Transform stoppingPoint;
+    [SerializeField] private Transform attackPoint;
 
-    private Animator _anim; 
+    [SerializeField] private float speed;
+    
+    [SerializeField] private float stoppingDistance = 0f; //Abstand zum Gegner 
+    [SerializeField] private float attackRange = 0f;
+    
+    private Animator _anim;
+    
+
+    public EnemyState enemyState;
     
     private bool isChasing;
 
@@ -35,17 +45,27 @@ public class EnemyMovement : MonoBehaviour
         {
             MovementState();
         }
+
+        if (target == null) return;
+
+        float distanceToTarget = Vector2.Distance(transform.position, target.position);
+
+       
+        if (distanceToTarget <= stoppingDistance)
+        {
+            rb.linearVelocity = Vector2.zero;
+            _anim.SetBool(AttackHashBool, true); 
+        }
+        
+        else
+        {
+            _anim.SetBool(AttackHashBool, false);
+            MovementState();
+        }
     }
 
     private void MovementState()
     {
-        float distanceToTarget = Vector2.Distance(transform.position, target.position);
-        if (distanceToTarget <= stoppingDistance)
-        {
-            rb.linearVelocity = Vector2.zero;
-            return;
-        }
-        
         Vector2 direction = (target.position - transform.position).normalized;
         
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
@@ -72,21 +92,8 @@ public class EnemyMovement : MonoBehaviour
                 facingDirectionY = -1;
                 facingDirectionX = 0;
                _anim.SetTrigger(FrontAnimationHashTrigger);
+              
             }
-        }
-
-        {
-           // SideAnimation();
-        }
-
-        //if (target.position.y > transform.position.y)
-        {
-            //FrontAnimation();
-        }
-
-        //else if (target.position.y > transform.position.y)
-        {
-            //BackAnimation();
         }
 
        rb.linearVelocity = direction * speed;
@@ -101,30 +108,28 @@ public class EnemyMovement : MonoBehaviour
         transform.localScale = new Vector3(Mathf.Abs(currentScale.x) * facingDirectionX, currentScale.y, currentScale.z);
     }
 
-    /*private void SideAnimation()
+    private void Attack()
     {
-        //facingDirectionX *= -1;
-        //_anim.SetTrigger(SideAnimationHashTrigger);
-        //transform.localScale = new Vector3(-transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        
     }
-
-    /*private void FrontAnimation()
+    
+    
+    public enum EnemyState
     {
-        //_anim.SetTrigger(FrontAnimationHashTrigger);
-        //transform.localScale = new Vector3(transform.localScale.y * -1, transform.localScale.x, transform.localScale.z);
-    }
-
-    /*private void BackAnimation()
-    {
-        //_anim.SetTrigger(BackAnimationHashTrigger);
-        //transform.localScale = new Vector3(-transform.localScale.y * 1, transform.localScale.x, transform.localScale.z);
-    }
-
-    /*public enum EnemyState
-    {
+        Attacking,
         Knockback,
         Chasing
     }
+    
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(stoppingPoint.position, stoppingDistance);
+        
+        Gizmos.color = Color.blue;
+        Gizmos.DrawSphere(attackPoint.position, attackRange);
+    }
+    
 
 /*private void OnTriggerEnter2D(Collider2D collision)
 {
