@@ -380,8 +380,10 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../Sounddesign/The Living Harvest/The Living Harvest.fspro
-  sourceBankPath: ../../Sounddesign/The Living Harvest/Build
+  sourceProjectPath: C:/Users/Anwender/Desktop/FMod/The Living Harvest (1)/The Living
+    Harvest/The Living Harvest.fspro
+  sourceBankPath: C:/Users/Anwender/Desktop/FMod/The Living Harvest (1)/The Living
+    Harvest/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -421,17 +423,17 @@ MonoBehaviour:
   HideSetupWizard: 1
   LastEventReferenceScanVersion: 131859
   Platforms:
-  - {fileID: -6486308618741733634}
-  - {fileID: 3378286546172845816}
   - {fileID: -8045868103425566742}
-  - {fileID: 5091566934877823951}
-  - {fileID: 1333556623305969320}
-  - {fileID: 6125420777797811266}
+  - {fileID: -6486308618741733634}
   - {fileID: -4617413015798634429}
-  - {fileID: -2909923547827522120}
   - {fileID: -4477336442214590773}
+  - {fileID: -2909923547827522120}
   - {fileID: 428584426890700925}
   - {fileID: 680768504608038765}
+  - {fileID: 1333556623305969320}
+  - {fileID: 3378286546172845816}
+  - {fileID: 5091566934877823951}
+  - {fileID: 6125420777797811266}
   - {fileID: 7555642130427574496}
   MigratedPlatforms: 0a00000000000000150000000b00000009000000050000001200000008000000060000000c0000000200000001000000
 --- !u!114 &428584426890700925
@@ -724,14 +726,14 @@ MonoBehaviour:
   displaySortOrder: 0
   childIdentifiers:
   - 2fea114e74ecf3c4f920e1d5cc1c4c40
-  - c88d16e5272a4e241b0ef0ac2e53b73d
-  - 2c5177b11d81d824dbb064f9ac8527da
-  - e7a046c753c3c3d4aacc91f6597f310d
   - fd7c55dab0fce234b8c25f6ffca523c1
-  - 52eb9df5db46521439908db3a29a1bbb
   - 0f8eb3f400726694eb47beb1a9f94ce8
+  - 52eb9df5db46521439908db3a29a1bbb
   - 46fbfdf3fc43db0458918377fd40293e
   - de700ef3f37a49b58a57ae3addf01ad9
+  - 2c5177b11d81d824dbb064f9ac8527da
+  - c88d16e5272a4e241b0ef0ac2e53b73d
+  - e7a046c753c3c3d4aacc91f6597f310d
   - b7716510a1f36934c87976f3a81dbf3d
   codecChannels:
     Value: []
