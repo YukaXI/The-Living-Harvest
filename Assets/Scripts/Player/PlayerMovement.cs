@@ -13,13 +13,30 @@ namespace Project.Player
         
         #endregion
 
+        
+        #region Enums
+        
+        public enum PlayerMovementState{Idle, Move}
+        public enum PlayerAttackStates{Default, Attack}
+        
+        #endregion
+        
         public Transform attackPoint;
         public float weaponRange = 1;
         public LayerMask enemyLayer;
         public int damage = 1;
         
+        [Header("Player States")]
+        [SerializeField] public PlayerMovementState playerMovementState;
+
+        [SerializeField] public PlayerAttackStates playerAttackStates;
+
+        
         [SerializeField]
         private PlayerInputManager _playerInputManager;
+        
+        [SerializeField]
+        private PlayerStates _playerStates;
         
         [SerializeField]
         private Animator anim;
@@ -40,12 +57,16 @@ namespace Project.Player
 
         private void Awake()
         {
+            _playerStates = GetComponent<PlayerStates>();
             anim = GetComponentInChildren<Animator>();
         }
         
         private void FixedUpdate()
         {
             Move(Time.fixedDeltaTime);
+            
+            playerMovementState = CurrentMovementDirection.magnitude == 0 ? PlayerMovementState.Idle : PlayerMovementState.Move;
+
         }
 
         private void Update()
@@ -80,13 +101,16 @@ namespace Project.Player
                 AnimationSetActionId(1);
 
                 Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, enemyLayer);
-
+                playerAttackStates = PlayerAttackStates.Attack;
             }
+            
+            
         }
 
         public void AttackEnde(InputAction.CallbackContext ctx)
         {
             anim.SetBool("isAttacking", false);
+            playerAttackStates = PlayerAttackStates.Default;
         }
         
         private void AnimationSetActionId(int id)
