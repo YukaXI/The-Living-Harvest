@@ -12,14 +12,14 @@ public class EnemyMovement : MonoBehaviour
     private Transform player;
 
     [SerializeField] private float speed;
-    [SerializeField] private float stoppingDistance = 0f;
+    [SerializeField] private float stoppingDistance = 0f; //Abstand zum Gegner 
 
     private Animator _anim; 
     
     private bool isChasing;
 
-    private int facingDirectionX = -1;
-    private int facingDirectionY = 0;
+    private int facingDirectionX = -1; //checkt die X-Achse es Gegners
+    private int facingDirectionY = 0; //checkt die Y-Achse des Gegners
     
     public Transform target;
 
@@ -148,3 +148,5 @@ private void OnTriggerExit2D(Collider2D collision)
 }
 */
 }
+
+//Quelle: https://www.youtube.com/watch?v=IEadGWvewsA&t=152s&pp=0gcJCRMMAYcqIYzv Enemy Reihe 
