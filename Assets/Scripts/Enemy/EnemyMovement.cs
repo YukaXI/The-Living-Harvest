@@ -9,14 +9,17 @@ public class EnemyMovement : MonoBehaviour
     
     
     [SerializeField] private Rigidbody2D rb;
+    private Transform player;
 
     [SerializeField] private float speed;
+    [SerializeField] private float stoppingDistance = 1f;
 
     private Animator _anim; 
     
     private bool isChasing;
 
     private int facingDirectionX = -1;
+    private int facingDirectionY = 0;
     
     public Transform target;
 
@@ -28,14 +31,10 @@ public class EnemyMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //if (isChasing == true)
-        //{
-
-//if (enemyState != enemyState.knockback)
+        if (target != null)
         {
             MovementState();
         }
-        
     }
 
     private void MovementState()
@@ -43,48 +42,83 @@ public class EnemyMovement : MonoBehaviour
         Vector2 direction = (target.position - transform.position).normalized;
         
         if (target.position.x > transform.position.x && facingDirectionX == -1 || target.position.x < transform.position.x && facingDirectionX == 1)
+            
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
-            SideAnimation();
+            if (direction.x > 0 && facingDirectionX < 0)
+            {
+                FlipX(1);
+                _anim.SetTrigger(SideAnimationHashTrigger);
+            }
+            else if (direction.x < 0 && facingDirectionX > 0)
+            {
+                FlipX(-1);
+                _anim.SetTrigger(SideAnimationHashTrigger);
+            }
+        }
+        else
+        {
+            if (direction.y > 0)
+            {
+                _anim.SetTrigger(BackAnimationHashTrigger);
+            }
+            else if (direction.y < 0)
+            {
+               _anim.SetTrigger(FrontAnimationHashTrigger);
+            }
         }
 
-        if (target.position.y > transform.position.y)
         {
-            FrontAnimation();
+           // SideAnimation();
         }
-        
-        else if (target.position.y > transform.position.y)
+
+        //if (target.position.y > transform.position.y)
         {
-            BackAnimation();
+            //FrontAnimation();
         }
-        
-        rb.linearVelocity = direction;
+
+        //else if (target.position.y > transform.position.y)
+        {
+            //BackAnimation();
+        }
+
+       rb.linearVelocity = direction * speed;
     }
 
-    private void SideAnimation()
+
+    private void FlipX(int newDirectionX)
     {
-        facingDirectionX *= -1;
-        _anim.SetTrigger(SideAnimationHashTrigger);
-        transform.localScale = new Vector3(-transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        facingDirectionX = newDirectionX;
+
+        Vector3 currentScale = transform.localScale;
+        transform.localScale = new Vector3(Mathf.Abs(currentScale.x) * facingDirectionX, currentScale.y, currentScale.z);
     }
 
-    private void FrontAnimation()
+    /*private void SideAnimation()
     {
-        _anim.SetTrigger(FrontAnimationHashTrigger);
-        transform.localScale = new Vector3(transform.localScale.y * -1, transform.localScale.x, transform.localScale.z);
+        //facingDirectionX *= -1;
+        //_anim.SetTrigger(SideAnimationHashTrigger);
+        //transform.localScale = new Vector3(-transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
 
-    private void BackAnimation()
+    /*private void FrontAnimation()
     {
-        _anim.SetTrigger(BackAnimationHashTrigger);
-        transform.localScale = new Vector3(-transform.localScale.y * 1, transform.localScale.x, transform.localScale.z);
+        //_anim.SetTrigger(FrontAnimationHashTrigger);
+        //transform.localScale = new Vector3(transform.localScale.y * -1, transform.localScale.x, transform.localScale.z);
     }
-    
-    public enum EnemyState
+
+    /*private void BackAnimation()
+    {
+        //_anim.SetTrigger(BackAnimationHashTrigger);
+        //transform.localScale = new Vector3(-transform.localScale.y * 1, transform.localScale.x, transform.localScale.z);
+    }
+
+    /*public enum EnemyState
     {
         Knockback,
         Chasing
     }
-    
+
 /*private void OnTriggerEnter2D(Collider2D collision)
 {
     if (collision.gameObject.CompareTag("Player"))
