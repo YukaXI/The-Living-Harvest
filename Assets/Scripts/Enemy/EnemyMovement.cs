@@ -55,6 +55,9 @@ public class EnemyMovement : MonoBehaviour
         {
             rb.linearVelocity = Vector2.zero;
             _anim.SetBool(AttackHashBool, true); 
+            
+            facingDirectionX = 0; 
+            facingDirectionY = 0;
         }
         
         else
