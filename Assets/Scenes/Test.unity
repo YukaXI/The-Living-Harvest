@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 59857963}
   - component: {fileID: 59857965}
   - component: {fileID: 59857964}
+  - component: {fileID: 59857966}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -198,6 +199,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59857962}
   m_CullTransparentMesh: 1
+--- !u!114 &59857966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59857962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a003ab4b5b33b2e4fb889827a00a2f0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseMenu: {fileID: 59857962}
 --- !u!1 &136174115
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,7 +577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29fab723344f83a42adde53b497b387f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuCanvas: {fileID: 1893697421}
+  menuCanvas: {fileID: 59857962}
 --- !u!1 &157833952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,7 +1467,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 937985226}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 59857966}
+        m_TargetAssemblyTypeName: PauseMenuController, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &937985226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2269,7 +2295,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1929254326}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 59857966}
+        m_TargetAssemblyTypeName: PauseMenuController, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1929254326
 MonoBehaviour:
   m_ObjectHideFlags: 0
