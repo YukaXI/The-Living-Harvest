@@ -192,6 +192,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-6460765277276569448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/ClickSoundPositive
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/ClickSoundPositive
+  Guid:
+    Data1: 1072705771
+    Data2: 1188425574
+    Data3: -695380085
+    Data4: 962625308
+  Banks:
+  - {fileID: 8915644609919211239}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 6467040218409990729}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-6243908332594872919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,6 +378,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-4546400973898075630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MainMenuMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MainMenuMusic
+  Guid:
+    Data1: 1741986774
+    Data2: 1133616420
+    Data3: 1711348112
+    Data4: 1688890480
+  Banks:
+  - {fileID: 8915644609919211239}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 73500
 --- !u!114 &-4388039932474218146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,6 +457,62 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 514115
+--- !u!114 &-3338940202144366933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Footsteps/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Character/Footsteps/Footsteps
+  Guid:
+    Data1: -943186497
+    Data2: 1246418356
+    Data3: 127453601
+    Data4: -2110539259
+  Banks:
+  - {fileID: 8915644609919211239}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3146142544068916327}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3146142544068916327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/surface
+  m_EditorClassIdentifier: 
+  Name: surface
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 2231515932
+    data2: 401439500
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Grass
+  - Dirt
+  - Stone
+  - Sand
+  Exists: 1
 --- !u!114 &-3123565570886983933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,6 +589,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2846389746713676799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/InGameMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/InGameMusic
+  Guid:
+    Data1: 1050717530
+    Data2: 1162251107
+    Data3: 1899102388
+    Data4: -1819083932
+  Banks:
+  - {fileID: 8915644609919211239}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1675825748601356617}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 514115
 --- !u!114 &-2818773305328978834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,6 +721,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-2168546477271180391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/HoverSound
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/HoverSound
+  Guid:
+    Data1: -1004371494
+    Data2: 1267332311
+    Data3: -624982136
+    Data4: -61567748
+  Banks:
+  - {fileID: 8915644609919211239}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 595204434092852930}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1994741520350332722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,22 +1006,22 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 685410846077598750}
-  - {fileID: -1690817161530541681}
+  - {fileID: 8817846861553332571}
+  - {fileID: 8915644609919211239}
   EditorEvents:
-  - {fileID: -3765173900141992372}
-  - {fileID: 7442650227646889041}
-  - {fileID: 9104192152271683654}
-  - {fileID: 8518274865547764605}
-  - {fileID: 6911146539120340871}
-  - {fileID: -5735193673704875308}
+  - {fileID: -2846389746713676799}
+  - {fileID: 4751829680485574080}
+  - {fileID: -3338940202144366933}
+  - {fileID: -4546400973898075630}
+  - {fileID: -2168546477271180391}
+  - {fileID: -6460765277276569448}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -1690817161530541681}
+  - {fileID: 8915644609919211239}
   StringsBanks:
-  - {fileID: 685410846077598750}
+  - {fileID: 8817846861553332571}
   cacheVersion: 131859
-  cacheTime: 639227459451537962
+  cacheTime: 639225644520000000
   SerializableEventsDict:
   - key: event:/Music/InGameMusic
     index: 0
@@ -895,6 +1062,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1311
+--- !u!114 &595204434092852930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HoverSound/UI-Click
+  m_EditorClassIdentifier: 
+  Name: UI-Click
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2252582777
+    data2: 2773705300
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &685410846077598750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -999,6 +1190,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 514115
+--- !u!114 &1675825748601356617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/InGameMusic/MusicRegions
+  m_EditorClassIdentifier: 
+  Name: MusicRegions
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 1390262040
+    data2: 1200770372
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &2098239130634017340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1212,6 +1427,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 73500
+--- !u!114 &4751829680485574080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/ClickSoundNegative
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/ClickSoundNegative
+  Guid:
+    Data1: -1316488571
+    Data2: 1076564456
+    Data3: 558867368
+    Data4: 2067907689
+  Banks:
+  - {fileID: 8915644609919211239}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1311
 --- !u!114 &4971923285353496086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,6 +1562,30 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 73500
 --- !u!114 &5951948170883771387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ClickSoundPositive/UI-ClickSound
+  m_EditorClassIdentifier: 
+  Name: UI-ClickSound
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2066510500
+    data2: 3750885949
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6467040218409990729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1544,6 +1810,46 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8817846861553332571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Anwender/Desktop/FMod/The Living Harvest (1)/The Living Harvest/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639225644520000000
+  FileSizes:
+  - Name: Desktop
+    Value: 1268
+  Exists: 1
+--- !u!114 &8915644609919211239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Anwender/Desktop/FMod/The Living Harvest (1)/The Living Harvest/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639225644520000000
+  FileSizes:
+  - Name: Desktop
+    Value: 7888672
+  Exists: 1
 --- !u!114 &9104192152271683654
 MonoBehaviour:
   m_ObjectHideFlags: 0
