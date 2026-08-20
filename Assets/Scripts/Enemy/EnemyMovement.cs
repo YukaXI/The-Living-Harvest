@@ -7,19 +7,19 @@ public class EnemyMovement : MonoBehaviour
     private static readonly int FrontAnimationHashTrigger = Animator.StringToHash("FrontTrigger");
     private static readonly int SideAnimationHashTrigger = Animator.StringToHash("SideTrigger");
     
-    private static readonly int AttackHashBool = Animator.StringToHash("isAttacking");
+    public static readonly int AttackHashBool = Animator.StringToHash("isAttacking");
     
     
     [SerializeField] private Rigidbody2D rb;
     private Transform player;
 
-    [SerializeField] private Transform stoppingPoint;
-    [SerializeField] private Transform attackPoint;
-
     [SerializeField] private float speed;
+    public float attackRange = 2;
+    public float attackCooldown = 2f;
+    private float attackCooldownTimer;
     
+    [SerializeField] private Transform stoppingPoint;
     [SerializeField] private float stoppingDistance = 0f; //Abstand zum Gegner 
-    [SerializeField] private float attackRange = 0f;
     
     private Animator _anim;
     
@@ -28,8 +28,8 @@ public class EnemyMovement : MonoBehaviour
     
     private bool isChasing;
 
-    private int facingDirectionX = -1; //checkt die X-Achse es Gegners
-    private int facingDirectionY = 0; //checkt die Y-Achse des Gegners
+    public int facingDirectionX = -1; //checkt die X-Achse es Gegners
+    public int facingDirectionY = 0; //checkt die Y-Achse des Gegners
     
     public Transform target;
 
@@ -110,12 +110,6 @@ public class EnemyMovement : MonoBehaviour
         Vector3 currentScale = transform.localScale;
         transform.localScale = new Vector3(Mathf.Abs(currentScale.x) * facingDirectionX, currentScale.y, currentScale.z);
     }
-
-    private void Attack()
-    {
-        
-    }
-    
     
     public enum EnemyState
     {
@@ -128,9 +122,6 @@ public class EnemyMovement : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(stoppingPoint.position, stoppingDistance);
-        
-        Gizmos.color = Color.blue;
-        Gizmos.DrawSphere(attackPoint.position, attackRange);
     }
     
 

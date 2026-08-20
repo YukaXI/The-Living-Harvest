@@ -28,6 +28,8 @@ public class EnemyHealth : MonoBehaviour
 
    private void Update()
    {
+      
+      
       if (currentHealth <= 0)
       {
          _anim.SetBool("isDead", true);
