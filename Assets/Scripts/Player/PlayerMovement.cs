@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,11 +9,11 @@ namespace Project.Player
         #region Hash
         
         private static readonly int HashActionTrigger = Animator.StringToHash("ActionTrigger");
-        
         private static readonly int HashActionId = Animator.StringToHash("ActionId");
         
         #endregion
 
+        
         public Transform attackPoint;
         public float weaponRange = 1;
         public LayerMask enemyLayer;
@@ -33,7 +34,7 @@ namespace Project.Player
         [SerializeField] 
         private float timer;
         
-        
+        public bool isAttacking = false;
         
         public Rigidbody2D Rigidbody => _rigidbody;
         public Vector2 CurrentMovementDirection { get; private set; }
@@ -76,19 +77,21 @@ namespace Project.Player
         {
             if (timer <= 0)
             {
+                isAttacking = true;
                 timer = cooldown;
+                
                 AnimationSetActionId(1);
-
-                Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, enemyLayer);
-
             }
-        }
-
-        public void AttackEnde(InputAction.CallbackContext ctx)
-        {
-            anim.SetBool("isAttacking", false);
+            //DealDamage();
         }
         
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(attackPoint.position, weaponRange);
+        }
+
         private void AnimationSetActionId(int id)
         {
             anim.SetTrigger(HashActionTrigger); 
