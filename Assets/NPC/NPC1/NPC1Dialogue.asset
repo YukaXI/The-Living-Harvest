@@ -16,9 +16,20 @@ MonoBehaviour:
   npcPortrait: {fileID: 0}
   dialogueLines:
   - Bitte hilf mir!
-  - Da sind ganz viele Monster.
+  - Da sind ganz viele Monster, kannst du mir bitte helfen!!!!
+  - Ehrenmann
+  - Ich liebe dich
+  - Gottlos
+  - Dann lass mich sterben
   autoProgressLines: 0100
+  endDialogueLines: 000000010001
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - Yur
+    - "N\xF6"
+    nextDialogueIndex: 0200000003000000
