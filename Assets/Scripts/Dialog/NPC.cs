@@ -86,6 +86,8 @@ void NextLine()
         StopAllCoroutines();
         dialogueUI.SetDialogueText(dialogueData.dialogueLines[dialogueIndex]);//Neu
         isTyping = false;
+
+        return;
     }
     
     //Clear Choices

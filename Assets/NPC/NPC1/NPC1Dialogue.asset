@@ -17,9 +17,9 @@ MonoBehaviour:
   dialogueLines:
   - Bitte hilf mir!
   - Da sind ganz viele Monster, kannst du mir bitte helfen!!!!
-  - Ehrenmann
+  - Ja
   - Ich liebe dich
-  - Gottlos
+  - Ok
   - Dann lass mich sterben
   autoProgressLines: 010000000000
   endDialogueLines: 000000010001
