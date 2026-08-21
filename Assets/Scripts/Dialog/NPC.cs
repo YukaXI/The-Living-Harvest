@@ -87,6 +87,13 @@ void NextLine()
         dialogueUI.SetDialogueText(dialogueData.dialogueLines[dialogueIndex]);//Neu
         isTyping = false;
     }
+    
+    //Clear Choices
+    
+    //Check endDialogueLines
+    
+    //Check if choices & display
+    
     else if(++dialogueIndex < dialogueData.dialogueLines.Length)
     {
         StartCoroutine(TypeLine());
