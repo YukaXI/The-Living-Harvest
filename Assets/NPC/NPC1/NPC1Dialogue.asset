@@ -21,7 +21,7 @@ MonoBehaviour:
   - Ich liebe dich
   - Gottlos
   - Dann lass mich sterben
-  autoProgressLines: 0100
+  autoProgressLines: 010000000000
   endDialogueLines: 000000010001
   autoProgressDelay: 1.5
   typingSpeed: 0.05
@@ -32,4 +32,4 @@ MonoBehaviour:
     choices:
     - Yur
     - "N\xF6"
-    nextDialogueIndex: 0200000003000000
+    nextDialogueIndexes: 0200000004000000

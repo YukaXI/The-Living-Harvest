@@ -75,8 +75,8 @@ void StartDialogue()
     dialogueUI.SetNPCInfo(dialogueData.npcName, dialogueData.npcPortrait);//Neu
     dialogueUI.ShowDialogueUI(true);//Neu
     PauseController.SetPause(true);
-
-    StartCoroutine(TypeLine());
+    
+    DisplayCurrentLine();
 }
 
 void NextLine()
@@ -89,14 +89,29 @@ void NextLine()
     }
     
     //Clear Choices
+    dialogueUI.ClearChoices();
     
     //Check endDialogueLines
+    if(dialogueData.endDialogueLines.Length > dialogueIndex && dialogueData.endDialogueLines[dialogueIndex])
+    {
+        EndDialogue();
+        return;
+    }
     
     //Check if choices & display
-    
-    else if(++dialogueIndex < dialogueData.dialogueLines.Length)
+    foreach(DialogueChoice dialogueChoice in dialogueData.choices)
     {
-        StartCoroutine(TypeLine());
+        if(dialogueChoice.dialogueIndex == dialogueIndex)
+        {
+            DisplayChoices(dialogueChoice);
+            return;
+        }
+    }
+    
+    
+    if(++dialogueIndex < dialogueData.dialogueLines.Length)
+    {
+        DisplayCurrentLine();
     }
     else
     {
@@ -123,6 +138,29 @@ void NextLine()
        NextLine();
     }
 }
+ 
+ void DisplayChoices(DialogueChoice choice)
+ {
+     for(int i = 0; i < choice.choices.Length; i++)
+     {
+         int nextIndex = choice.nextDialogueIndexes[i];
+         dialogueUI.CreateChoiceButton(choice.choices[i], () => ChooseOption(nextIndex));
+     }
+ }
+ 
+ void ChooseOption(int nextIndex)
+ {
+     dialogueIndex = nextIndex;
+     dialogueUI.ClearChoices();
+     DisplayCurrentLine();
+ }
+ 
+ void DisplayCurrentLine()
+ {
+     StopAllCoroutines();
+     StartCoroutine(TypeLine());
+ }
+ 
  public void EndDialogue()
  {
     StopAllCoroutines();
