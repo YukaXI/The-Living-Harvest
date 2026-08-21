@@ -9,10 +9,7 @@ public class NPC : MonoBehaviour, IInteractable
 {
     //Setup für die Hierarchy und Aufbau des Dialoges
    public NPCDialogue dialogueData;
-   public GameObject dialoguePanel;
-   public TMP_Text dialogueText, nameText;
-   public Image portraitImage;
-
+   private DialogueController dialogueUI;
    private int dialogueIndex;
    private bool isTyping, isDialogueActive;
 
@@ -22,6 +19,7 @@ public class NPC : MonoBehaviour, IInteractable
    
    private void Start()
    {
+       dialogueUI = DialogueController.Instance;
        inputManager = FindAnyObjectByType<PlayerInputManager>();
    }
    private void Update()
@@ -74,10 +72,8 @@ void StartDialogue()
     isDialogueActive = true;
     dialogueIndex = 0;
     
-    nameText.SetText(dialogueData.npcName);
-    portraitImage.sprite = dialogueData.npcPortrait;
-    
-    dialoguePanel.SetActive(true);
+    dialogueUI.SetNPCInfo(dialogueData.npcName, dialogueData.npcPortrait);//Neu
+    dialogueUI.ShowDialogueUI(true);//Neu
     PauseController.SetPause(true);
 
     StartCoroutine(TypeLine());
@@ -88,7 +84,7 @@ void NextLine()
     if (isTyping)
     {  
         StopAllCoroutines();
-        dialogueText.SetText(dialogueData.dialogueLines[dialogueIndex]);
+        dialogueUI.SetDialogueText(dialogueData.dialogueLines[dialogueIndex]);//Neu
         isTyping = false;
     }
     else if(++dialogueIndex < dialogueData.dialogueLines.Length)
@@ -104,11 +100,11 @@ void NextLine()
  IEnumerator TypeLine()
 {
     isTyping = true;
-    dialogueText.SetText("");
+    dialogueUI.SetDialogueText("");//Neu
     
     foreach(char letter in dialogueData.dialogueLines[dialogueIndex])
     {
-        dialogueText.text += letter;
+        dialogueUI.SetDialogueText(dialogueUI.dialogueText.text += letter);//neu
         yield return new WaitForSeconds(dialogueData.typingSpeed);
     }
 
@@ -124,8 +120,8 @@ void NextLine()
  {
     StopAllCoroutines();
     isDialogueActive = false;
-    dialogueText.SetText("");
-    dialoguePanel.SetActive(false);
+    dialogueUI.SetDialogueText(""); //Neu
+    dialogueUI.ShowDialogueUI(false); //Neu
     PauseController.SetPause(false);
  }
 }

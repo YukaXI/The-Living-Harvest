@@ -1,16 +1,35 @@
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class DialogueController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static DialogueController Instance {  get; private set; }
+    
+    
+    public GameObject dialoguePanel;
+    public TMP_Text dialogueText, nameText;
+    public Image portraitImage;
+    
+    void Awake()
     {
-        
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public void ShowDialogueUI(bool show)
     {
-        
+        dialoguePanel.SetActive(show);
+    }
+    
+    public void SetNPCInfo(string npcName, Sprite portrait)
+    {
+        nameText.text = npcName;
+        portraitImage.sprite = portrait;
+    }
+    
+    public void SetDialogueText(string text)
+    {
+        dialogueText.text = text;
     }
 }
