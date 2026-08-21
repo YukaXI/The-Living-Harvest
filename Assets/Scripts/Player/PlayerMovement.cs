@@ -12,6 +12,7 @@ namespace Project.Player
         private static readonly int HashActionId = Animator.StringToHash("ActionId");
         
         #endregion
+       
 
         
         public Transform attackPoint;
