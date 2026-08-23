@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -40,6 +41,8 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private Transform stoppingPoint;
     [SerializeField] private float stoppingDistance = 0f; //Abstand zum Gegner 
     
+    private Slider _slider;
+    
     private bool isChasing;
 
     public int facingDirectionX = -1; //checkt die X-Achse es Gegners
@@ -55,6 +58,7 @@ public class EnemyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
+        _slider = GetComponentInChildren<Slider>();
     }
 
     private void FixedUpdate()
@@ -100,6 +104,16 @@ public class EnemyMovement : MonoBehaviour
                 FlipX(targetDirX);
                 facingDirectionY = 0;
                 _anim.SetTrigger(SideAnimationHashTrigger);
+
+                if (facingDirectionX == 1)
+                {
+                    _slider.transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+
+                else
+                {
+                    _slider.transform.rotation = Quaternion.Euler(0, 0, 180);
+                }
             }
         }
         else

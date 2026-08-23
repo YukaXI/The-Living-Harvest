@@ -56,6 +56,60 @@ MonoBehaviour:
   - Sand
   - Stone
   Exists: 1
+--- !u!114 &-6640552328949485580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Enemies/DeathSound
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Character/Enemies/DeathSound
+  Guid:
+    Data1: -1409602735
+    Data2: 1183741486
+    Data3: 1842223783
+    Data4: -1761905112
+  Banks:
+  - {fileID: -5326904212024597233}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 490
+--- !u!114 &-5774578491812243883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Interactions/SwordAttack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Character/Interactions/SwordAttack
+  Guid:
+    Data1: 1668633696
+    Data2: 1147129743
+    Data3: -1846650717
+    Data4: -508057174
+  Banks:
+  - {fileID: -5326904212024597233}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 939
 --- !u!114 &-5326904212024597233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,10 +125,10 @@ MonoBehaviour:
   Path: ../../Sounddesign/The Living Harvest/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639227459451522853
+  lastModified: 639231036253022277
   FileSizes:
   - Name: Desktop
-    Value: 7888672
+    Value: 7905344
   Exists: 1
 --- !u!114 &-2591548976855078326
 MonoBehaviour:
@@ -154,13 +208,15 @@ MonoBehaviour:
   - {fileID: 1864578167214812018}
   - {fileID: -9176611623842570688}
   - {fileID: -1325365802512592017}
+  - {fileID: -6640552328949485580}
+  - {fileID: -5774578491812243883}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5326904212024597233}
   StringsBanks:
   - {fileID: 5166224879277867334}
   cacheVersion: 131859
-  cacheTime: 639227459451537962
+  cacheTime: 639231036253044547
   SerializableEventsDict:
   - key: event:/Music/InGameMusic
     index: 0
@@ -174,6 +230,10 @@ MonoBehaviour:
     index: 4
   - key: event:/SFX/UI/ClickSoundPositive
     index: 5
+  - key: event:/SFX/Character/Enemies/DeathSound
+    index: 6
+  - key: event:/SFX/Character/Interactions/SwordAttack
+    index: 7
 --- !u!114 &1864578167214812018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,10 +303,10 @@ MonoBehaviour:
   Path: ../../Sounddesign/The Living Harvest/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639227459451537962
+  lastModified: 639231036253044547
   FileSizes:
   - Name: Desktop
-    Value: 1268
+    Value: 1384
   Exists: 1
 --- !u!114 &6339369791941709331
 MonoBehaviour:

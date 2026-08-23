@@ -56,7 +56,6 @@ public class EnemyAttack : MonoBehaviour
         {
             _enemyMovement._enemyAnimationState = EnemyMovement.EnemyAnimationStates.Attacking;
             hits[0].GetComponentInChildren<PlayerHealth>().ChangeHealth(-damage);
-            Debug.Log(hits[0].name);
         }
     }
 

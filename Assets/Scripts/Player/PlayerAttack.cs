@@ -1,5 +1,6 @@
 using Project.Player;
 using UnityEngine;
+using FMODUnity;
 
 public class PlayerAttack : MonoBehaviour
 {
