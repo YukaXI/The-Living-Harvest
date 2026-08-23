@@ -1,13 +1,9 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBar : MonoBehaviour
+public class EnemyHealthBar : MonoBehaviour
 {
-    //Quelle: https://www.youtube.com/watch?v=S0gmSDRXzgs
-    
     public Slider healthBarSlider;
-    public TextMeshProUGUI healthBarValueText;
 
     public int maxHealth;
     public int currentHealth;
@@ -20,11 +16,8 @@ public class HealthBar : MonoBehaviour
 
     private void Update()
     {
-        healthBarValueText.text = currentHealth.ToString() + "/" + maxHealth.ToString();
-
         healthBarSlider.value = currentHealth;
         healthBarSlider.maxValue = maxHealth;
     }
-    
-   
+
 }
