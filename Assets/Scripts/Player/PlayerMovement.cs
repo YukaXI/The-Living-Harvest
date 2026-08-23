@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FMODUnity;
 
 namespace Project.Player
 {
@@ -10,6 +11,9 @@ namespace Project.Player
         
         private static readonly int HashActionTrigger = Animator.StringToHash("ActionTrigger");
         private static readonly int HashActionId = Animator.StringToHash("ActionId");
+        
+        private static readonly int HashMovementDirX = Animator.StringToHash("dirX");
+        private static readonly int HashMovementDirY = Animator.StringToHash("dirY");
         
         #endregion
        
@@ -22,7 +26,6 @@ namespace Project.Player
         
         [SerializeField]
         private PlayerInputManager _playerInputManager;
-        
         [SerializeField]
         private Animator anim;
         
@@ -34,6 +37,9 @@ namespace Project.Player
         private float cooldown = 2;
         [SerializeField] 
         private float timer;
+
+        [SerializeField] 
+        private float attackPointOffset;
         
         public bool isAttacking = false;
         
@@ -59,6 +65,8 @@ namespace Project.Player
             {
                 timer -= Time.deltaTime;
             }
+            
+            AttackPointOffset();
         }
 
         private void Move(float deltaTime)
@@ -80,8 +88,10 @@ namespace Project.Player
             {
                 isAttacking = true;
                 timer = cooldown;
-                
+
                 AnimationSetActionId(1);
+
+                RuntimeManager.PlayOneShot("event:/SFX/Character/Interactions/SwordAttack");
             }
             //DealDamage();
         }
@@ -99,5 +109,28 @@ namespace Project.Player
             anim.SetInteger(HashActionId, id);
         }
 
+        private void AttackPointOffset()
+        {
+            if (anim.GetFloat(HashMovementDirY) == 1)
+            {
+                attackPoint.localPosition = new Vector3(0, 1.3f, 0);
+            }
+        
+            else if (anim.GetFloat(HashMovementDirY) == -1) 
+            {
+                attackPoint.localPosition = new Vector3(0, -0.4f, 0);
+            }
+        
+            else if (anim.GetFloat(HashMovementDirX) == 1) 
+            {
+                attackPoint.localPosition = new Vector3(attackPointOffset, 0.5f, 0);
+            }
+        
+            else if (anim.GetFloat(HashMovementDirX) == -1) 
+            {
+                attackPoint.localPosition = new Vector3(attackPointOffset, 0.5f, 0);
+            }
+        }
     }
+
 }
