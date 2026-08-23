@@ -1,39 +1,31 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] GameObject spawner;
-    [SerializeField] float sizeX = 1f;
-    [SerializeField] float sizeY =1f;
-    [SerializeField] float spawnCooldown = 1f;
-
-    private float spawnTime;
+    [SerializeField] private GameObject[] prefab;
+    [SerializeField] private float spawnRate = 1f;
+    [SerializeField] private bool canSpawn = true;
 
     void Awake()
     {
-        spawnTime = spawnCooldown;
+        StartCoroutine(Spawner());
     }
 
-    private void Update()
+    private IEnumerator Spawner()
     {
-        if (spawnTime > 0) spawnTime -= Time.deltaTime;
+        WaitForSeconds wait = new WaitForSeconds(spawnRate);
 
-        if (spawnTime <= 0)
+        while (canSpawn)
         {
-            Spawn();
-            spawnTime = spawnCooldown;
+            yield return wait;
+            int rand = Random. Range (0, prefab.Length);
+            GameObject enemyToSpawn = prefab[rand];
+            
+            Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
         }
     }
+    
 
-    private void Spawn()
-    {
-        float xPos = (Random.value - 0.5f)*2 * sizeX + gameObject.transform.position.x;
-        float yPos = (Random.value - 0.5f)*2 * sizeY + gameObject.transform.position.y;
-
-        var spawn = Instantiate(spawner);
-        
-        spawn.transform.position = new Vector3(xPos, yPos, 0);
-    }
-
-    //Quelle: https://www.youtube.com/shorts/3UNDp1TlxdM
+    //Quelle: https://www.youtube.com/watch?v=2PfJZtnfc_Q
 }
