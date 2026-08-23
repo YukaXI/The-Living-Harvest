@@ -121,7 +121,7 @@ void NextLine()
     }
 }
 
- IEnumerator TypeLine()
+IEnumerator TypeLine()
 {
     isTyping = true;
     dialogueUI.SetDialogueText("");//Neu
@@ -133,11 +133,20 @@ void NextLine()
     }
 
     isTyping = false;
-
+    
+    foreach(DialogueChoice dialogueChoice in dialogueData.choices)
+    {
+        if (dialogueChoice.dialogueIndex == dialogueIndex)
+        {
+            DisplayChoices(dialogueChoice);
+            yield break;
+        }
+    }
+    
     if (dialogueData.autoProgressLines.Length > dialogueIndex && dialogueData.autoProgressLines[dialogueIndex])
     {
-       yield return new WaitForSeconds(dialogueData.autoProgressDelay);
-       NextLine();
+        yield return new WaitForSeconds(dialogueData.autoProgressDelay);
+        NextLine();
     }
 }
  

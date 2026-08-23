@@ -21,7 +21,7 @@ MonoBehaviour:
   - Ich liebe dich
   - Ok
   - Dann lass mich sterben
-  autoProgressLines: 010000000000
+  autoProgressLines: 010001000100
   endDialogueLines: 000000010001
   autoProgressDelay: 1.5
   typingSpeed: 0.05
