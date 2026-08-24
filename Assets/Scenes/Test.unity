@@ -1306,8 +1306,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: NPC1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 26a2effdce9b234439096fe56e1e594c, type: 2}
+  m_sharedMaterial: {fileID: 2117762494894462202, guid: 26a2effdce9b234439096fe56e1e594c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1948,8 +1948,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 26a2effdce9b234439096fe56e1e594c, type: 2}
+  m_sharedMaterial: {fileID: 2117762494894462202, guid: 26a2effdce9b234439096fe56e1e594c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2173,7 +2173,7 @@ MonoBehaviour:
   nameText: {fileID: 583202146}
   portraitImage: {fileID: 1632086821}
   choiceContainer: {fileID: 320033092}
-  Choice1Prefab: {fileID: 4511908663937609638, guid: 656c1f554c9e2b54e9f65b69c83872ac, type: 3}
+  Choice1Prefab: {fileID: 8028204343111452258, guid: 6f65254811654a0488b1cf2ac0a8734a, type: 3}
 --- !u!1 &1632086820
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,8 +2694,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: X
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 26a2effdce9b234439096fe56e1e594c, type: 2}
+  m_sharedMaterial: {fileID: 2117762494894462202, guid: 26a2effdce9b234439096fe56e1e594c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
