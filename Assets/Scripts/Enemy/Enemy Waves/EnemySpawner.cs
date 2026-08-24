@@ -5,9 +5,10 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] prefab;
     [SerializeField] private float spawnRate = 1f;
-    [SerializeField] private bool canSpawn = true;
+    
+    public bool canSpawn = true;
 
-    void Awake()
+    private void Start()
     {
         StartCoroutine(Spawner());
     }
@@ -16,13 +17,17 @@ public class EnemySpawner : MonoBehaviour
     {
         WaitForSeconds wait = new WaitForSeconds(spawnRate);
 
-        while (canSpawn)
+        while (true)
         {
             yield return wait;
-            int rand = Random. Range (0, prefab.Length);
-            GameObject enemyToSpawn = prefab[rand];
-            
-            Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
+
+            if (canSpawn)
+            {
+                int rand = Random.Range(0, prefab.Length);
+                GameObject enemyToSpawn = prefab[rand];
+
+                Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
+            }
         }
     }
     
