@@ -38,8 +38,8 @@ public class PlayerFootstepSound : MonoBehaviour
     }
 
     private void Update()
-    {
-       // if (_playerMovement.playerMovementState == 0) return;
+    { 
+        if (_playerMovement.playerMovementState == 0) return;
         if (_footstepSoundAreas.Count < 1) return;
         
         _footstepTimer += Time.deltaTime;

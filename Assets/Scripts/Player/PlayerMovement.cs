@@ -17,7 +17,14 @@ namespace Project.Player
         
         #endregion
        
-
+        #region Enums
+        
+        public enum PlayerMovementState{Idle, Move}
+        
+        #endregion
+        
+        [Header("Player States")]
+        [SerializeField] public PlayerMovementState playerMovementState;
         
         public Transform attackPoint;
         public float weaponRange = 1;
@@ -54,6 +61,8 @@ namespace Project.Player
         private void FixedUpdate()
         {
             Move(Time.fixedDeltaTime);
+            
+            playerMovementState = CurrentMovementDirection.magnitude == 0 ? PlayerMovementState.Idle : PlayerMovementState.Move;
         }
 
         private void Update()
