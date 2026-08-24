@@ -12,16 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3def7a74519455a4094adaf071a8bebd, type: 3}
   m_Name: "WasserB\xFCffelDialogue"
   m_EditorClassIdentifier: 
-  npcName: Wasser
+  npcName: Walter
   npcPortrait: {fileID: 0}
-  dialogueLines: []
-  autoProgressLines: 
-  endDialogueLines: 
+  dialogueLines:
+  - "Ach du bist also der ber\xFChmte Magier, der die Felder verflucht hat hm?"
+  - Dich lasse ich sicher nicht zum Feld.
+  - "Au\xDFer du bringst mir einen Muffin von Penny. "
+  - "Ihr geh\xF6rt hier die Dorfb\xE4ckerei."
+  autoProgressLines: 01010101
+  endDialogueLines: 00000001
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
   choices:
-  - dialogueIndex: 0
-    choices: []
-    nextDialogueIndexes: 
+  - dialogueIndex: 3
+    choices:
+    - "Na sch\xF6n."
+    nextDialogueIndexes: ffffffff

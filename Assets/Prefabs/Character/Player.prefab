@@ -231,12 +231,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b95457f138d2d468f8d85c63cf428f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMovementState: 0
   attackPoint: {fileID: 8181731969318113261}
   weaponRange: 0.3
   enemyLayer:
     serializedVersion: 2
     m_Bits: 4096
   damage: 4
+  isPaused: 0
+  _inventory: {fileID: 0}
   _playerInputManager: {fileID: 0}
   anim: {fileID: 8744753655517657626}
   _rigidbody: {fileID: 7138250994293721446}

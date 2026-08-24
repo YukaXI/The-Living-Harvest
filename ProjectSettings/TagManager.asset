@@ -7,6 +7,7 @@ TagManager:
   - EnemySpawn
   - Enemy
   - Boss
+  - BuergerMeister
   layers:
   - Default
   - TransparentFX

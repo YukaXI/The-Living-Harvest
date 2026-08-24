@@ -12,13 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3def7a74519455a4094adaf071a8bebd, type: 3}
   m_Name: Katze Dialogue
   m_EditorClassIdentifier: 
-  npcName: 
+  npcName: Minzy
   npcPortrait: {fileID: 0}
-  dialogueLines: []
+  dialogueLines:
+  - Kennen wir uns? Du kommst mir bekannt vor.
+  - Hm. Wie kann ich helfen?
+  - Klar, wenn du mir mein Buch vom Steg am Teich holst.
   autoProgressLines: 
-  endDialogueLines: 
+  endDialogueLines: 010101
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
-  choices: []
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - "\xC4hhhh nein"
+    nextDialogueIndexes: 01000000
+  - dialogueIndex: 1
+    choices:
+    - "Ich br\xE4uchte Mehl"
+    nextDialogueIndexes: 02000000
+  - dialogueIndex: 2
+    choices:
+    - War ja klar...
+    nextDialogueIndexes: ffffffff

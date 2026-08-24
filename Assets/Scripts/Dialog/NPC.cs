@@ -161,6 +161,12 @@ IEnumerator TypeLine()
  
  void ChooseOption(int nextIndex)
  {
+     if (nextIndex == -1)
+     {
+         EndDialogue();
+         return;
+     }
+     
      dialogueIndex = nextIndex;
      dialogueUI.ClearChoices();
      DisplayCurrentLine();
@@ -176,6 +182,7 @@ IEnumerator TypeLine()
  {
     StopAllCoroutines();
     isDialogueActive = false;
+    dialogueUI.ClearChoices();
     dialogueUI.SetDialogueText(""); //Neu
     dialogueUI.ShowDialogueUI(false); //Neu
     PauseController.SetPause(false);
