@@ -16,9 +16,20 @@ MonoBehaviour:
   npcPortrait: {fileID: 0}
   dialogueLines:
   - Bitte hilf mir!
-  - Da sind ganz viele Monster.
-  autoProgressLines: 0100
+  - Da sind ganz viele Monster, kannst du mir bitte helfen!!!!
+  - Ja
+  - Ich liebe dich
+  - Ok
+  - Dann lass mich sterben
+  autoProgressLines: 010001000100
+  endDialogueLines: 000000010001
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - Yur
+    - "N\xF6"
+    nextDialogueIndexes: 0200000004000000

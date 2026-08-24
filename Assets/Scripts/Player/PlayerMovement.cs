@@ -58,9 +58,6 @@ namespace Project.Player
 
         private void Update()
         {
-            if (PauseController.IsGamePaused)
-                return;
-            
             if (timer > 0)
             {
                 timer -= Time.deltaTime;
@@ -84,6 +81,9 @@ namespace Project.Player
         
         public void Attack(InputAction.CallbackContext context)
         {
+            if (PauseController.IsGamePaused)
+                return;
+            
             if (timer <= 0)
             {
                 isAttacking = true;
