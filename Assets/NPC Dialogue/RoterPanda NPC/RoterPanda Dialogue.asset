@@ -12,13 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3def7a74519455a4094adaf071a8bebd, type: 3}
   m_Name: RoterPanda Dialogue
   m_EditorClassIdentifier: 
-  npcName: 
+  npcName: Penny
   npcPortrait: {fileID: 0}
-  dialogueLines: []
-  autoProgressLines: 
-  endDialogueLines: 
+  dialogueLines:
+  - "Nur \xFCber meine Leiche!"
+  - Ich werde dir nichts verkaufen!
+  - "Nicht nachdem DU daf\xFCr gesorgt hast, dass wir keine Saat mehr Pflanzen k\xF6nnen."
+  - "Ohne dass wir von mutierten GEM\xDCSE ANGEGRIFFEN WERDEN!"
+  - "Wenn du mir von Minzy Mehl besorgst, dann w\xFCrde ich dir einen geben."
+  autoProgressLines: 01010101000000
+  endDialogueLines: 00000001000000
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
-  choices: []
+  choices:
+  - dialogueIndex: 3
+    choices:
+    - "Ich br\xE4uchte eigentlich nur einen Muffin"
+    nextDialogueIndexes: 04000000
+  - dialogueIndex: 4
+    choices:
+    - "Die m\xF6gen hier wohl Tauschhandel"
+    nextDialogueIndexes: ffffffff

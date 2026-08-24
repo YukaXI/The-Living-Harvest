@@ -25,25 +25,25 @@ namespace Project.Player
         
         [Header("Player States")]
         [SerializeField] public PlayerMovementState playerMovementState;
-        
+        public bool canAttack;
         public Transform attackPoint;
         public float weaponRange = 1;
         public LayerMask enemyLayer;
         public int damage = 1;
         
-        [SerializeField]
-        private PlayerInputManager _playerInputManager;
-        [SerializeField]
-        private Animator anim;
+        [Header("Movement Controlling")] public bool canMove = true;
         
-        [SerializeField]
-        private Rigidbody2D _rigidbody;
-        [SerializeField]
-        private float _baseSpeed = 5f;
-        [SerializeField]
-        private float cooldown = 2;
-        [SerializeField] 
-        private float timer;
+        [Header("Inventory Setup")]
+        public bool isPaused;
+        
+        [SerializeField] private GameObject _inventory;
+        [SerializeField] private PlayerInputManager _playerInputManager;
+        [SerializeField] private Animator anim;
+        
+        [SerializeField] private Rigidbody2D _rigidbody;
+        [SerializeField] private float _baseSpeed = 5f;
+        [SerializeField] private float cooldown = 2;
+        [SerializeField] private float timer;
 
         [SerializeField] 
         private float attackPointOffset;
@@ -55,7 +55,10 @@ namespace Project.Player
 
         private void Awake()
         {
+            _rigidbody = GetComponent<Rigidbody2D>();
             anim = GetComponentInChildren<Animator>();
+            _inventory.SetActive(false);
+            
         }
         
         private void FixedUpdate()
@@ -88,22 +91,50 @@ namespace Project.Player
             _rigidbody.linearVelocity = CurrentMovementDirection * _baseSpeed;
         }
         
+        
         public void Attack(InputAction.CallbackContext context)
         {
-            if (PauseController.IsGamePaused)
-                return;
-            
-            if (timer <= 0)
+            if (canAttack)
             {
-                isAttacking = true;
-                timer = cooldown;
+                if (PauseController.IsGamePaused)
+                    return;
 
-                AnimationSetActionId(1);
+                if (timer <= 0)
+                {
+                    isAttacking = true;
+                    timer = cooldown;
 
-                RuntimeManager.PlayOneShot("event:/SFX/Character/Interactions/SwordAttack");
+                    AnimationSetActionId(1);
+
+                    RuntimeManager.PlayOneShot("event:/SFX/Character/Interactions/SwordAttack");
+                }
             }
-            //DealDamage();
         }
+
+        #region Inventory
+        
+        public void Inventory(InputAction.CallbackContext context)
+        {
+            if (PauseController.IsGamePaused)
+                ResumeGame();
+            else
+                PauseGame();
+
+        }
+        
+        public void ResumeGame()
+        {
+            _inventory.SetActive(false);
+            PauseController.SetPause(false);
+        }
+
+        public void PauseGame()
+        {
+            _inventory.SetActive(true);
+            PauseController.SetPause(true);
+        }
+        
+        #endregion
         
 
         private void OnDrawGizmosSelected()

@@ -12,13 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3def7a74519455a4094adaf071a8bebd, type: 3}
   m_Name: "B\xFCrgermeister Dialogue"
   m_EditorClassIdentifier: 
-  npcName: 
+  npcName: "B\xFCrgermeister"
   npcPortrait: {fileID: 0}
-  dialogueLines: []
-  autoProgressLines: 
-  endDialogueLines: 
+  dialogueLines:
+  - "Du bist derjenige, der f\xFCr all das hier Verantwortlich ist oder?"
+  - Beweise mir, dass du aus guten Absichten hier bist und hilf unser Dorf.
+  - Das Feld befindet sich oben.
+  - "Auf dem H\xFCgel direkt neben dem Verkaufsstand."
+  - "Kann man nicht \xFCbersehen."
+  autoProgressLines: 0001010101
+  endDialogueLines: 0100000001
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
-  choices: []
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - Deswegen bin ich hier.
+    nextDialogueIndexes: 01000000
+  - dialogueIndex: 4
+    choices:
+    - Ich mache mich sofort auf den Weg.
+    nextDialogueIndexes: ffffffff
