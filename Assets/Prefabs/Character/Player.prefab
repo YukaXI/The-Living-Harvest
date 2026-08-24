@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 343174343083991370}
   - component: {fileID: 8744753655517657626}
   - component: {fileID: 4716321646525494055}
+  - component: {fileID: 2751727504744547821}
   - component: {fileID: 3566433096703440811}
   m_Layer: 13
   m_Name: Base
@@ -125,7 +126,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 285a7713ac871e1439a16b736c18a8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _knockbackForce: 0
+  _knockbackForce: 10
+  stunTime: 0.2
+--- !u!114 &2751727504744547821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3707272859871100555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6431c3c2aa53d7a44ad91eb3f77aeec8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _knockbackForce: 10
+  stunTime: 0.2
 --- !u!114 &3566433096703440811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,13 +236,14 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 4096
-  damage: 1
+  damage: 4
   _playerInputManager: {fileID: 0}
   anim: {fileID: 8744753655517657626}
   _rigidbody: {fileID: 7138250994293721446}
   _baseSpeed: 3
   cooldown: 0.6
   timer: 0
+  attackPointOffset: 0.55
   isAttacking: 0
 --- !u!114 &5926901194085190124
 MonoBehaviour:
@@ -289,8 +306,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
+  m_Offset: {x: 0, y: 0.49232465}
+  m_Size: {x: 0.5, y: 0.9774071}
   m_Direction: 0
 --- !u!1 &6532323119452591820
 GameObject:
@@ -317,7 +334,7 @@ Transform:
   m_GameObject: {fileID: 6532323119452591820}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.57, y: 0.481, z: 0}
+  m_LocalPosition: {x: 0, y: 0.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyBossMovement : MonoBehaviour
 {
     #region Private Hashes
     
@@ -59,7 +59,6 @@ public class EnemyMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
         _slider = GetComponentInChildren<Slider>();
-        target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void FixedUpdate()
@@ -105,16 +104,6 @@ public class EnemyMovement : MonoBehaviour
                 FlipX(targetDirX);
                 facingDirectionY = 0;
                 _anim.SetTrigger(SideAnimationHashTrigger);
-
-                if (facingDirectionX == 1)
-                {
-                    _slider.transform.rotation = Quaternion.Euler(0, 0, 0);
-                }
-
-                else
-                {
-                    _slider.transform.rotation = Quaternion.Euler(0, 0, 180);
-                }
             }
         }
         else
