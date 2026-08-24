@@ -308,6 +308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 8
   maxHealth: 8
+  _enemyHealthBarUI: {fileID: 4685360645628026825}
 --- !u!114 &1573926581846903382
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,6 +11,9 @@ public class EnemyHealth : MonoBehaviour
    private Rigidbody2D rb;
    private EnemyHealthBar  _enemyHealthBar;
 
+   [SerializeField] 
+   private GameObject _enemyHealthBarUI;
+
    private void Awake()
    {
       currentHealth = maxHealth;
@@ -44,6 +47,11 @@ public class EnemyHealth : MonoBehaviour
       Destroy(this.gameObject);
    }
 
+   private void DestroyHealthBar()
+   {
+      _enemyHealthBarUI.SetActive(false);
+   }
+   
    private void EnemyDeathSound()
    {
       RuntimeManager.PlayOneShot("event:/SFX/Character/Enemies/DeathSound");
