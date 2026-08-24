@@ -54,8 +54,8 @@ public class EnemyAttack : MonoBehaviour
 
         if (hits.Length > 0)
         {
+            _enemyMovement._enemyAnimationState = EnemyMovement.EnemyAnimationStates.Attacking;
             hits[0].GetComponentInChildren<PlayerHealth>().ChangeHealth(-damage);
-            Debug.Log(hits[0].name);
         }
     }
 

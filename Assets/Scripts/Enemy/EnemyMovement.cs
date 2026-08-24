@@ -1,19 +1,39 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyMovement : MonoBehaviour
 {
+    #region Private Hashes
+    
     private static readonly int BackAnimationHashTrigger = Animator.StringToHash("BackTrigger");
     private static readonly int FrontAnimationHashTrigger = Animator.StringToHash("FrontTrigger");
     private static readonly int SideAnimationHashTrigger = Animator.StringToHash("SideTrigger");
     
     public static readonly int AttackHashBool = Animator.StringToHash("isAttacking");
+        
+    #endregion
     
+     
+    #region public enums
+        
+    public enum EnemyAnimationStates{Move, Attacking, Knockback}
+        
+    #endregion
+    
+    #region private and public Variables
     
     [SerializeField] private Rigidbody2D rb;
     private Transform player;
+    private Animator _anim;
+
 
     [SerializeField] private float speed;
+    
+    [Header("Enemy Movement States")]
+    public EnemyAnimationStates _enemyAnimationState;
+    
+    [Header("Attack Setup")]
     public float attackRange = 2;
     public float attackCooldown = 2f;
     private float attackCooldownTimer;
@@ -21,10 +41,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private Transform stoppingPoint;
     [SerializeField] private float stoppingDistance = 0f; //Abstand zum Gegner 
     
-    private Animator _anim;
-    
-
-    public EnemyState enemyState;
+    private Slider _slider;
     
     private bool isChasing;
 
@@ -33,40 +50,48 @@ public class EnemyMovement : MonoBehaviour
     
     public Transform target;
 
+    #endregion
+
+    #region Unity Events
+    
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
+        _slider = GetComponentInChildren<Slider>();
+        target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void FixedUpdate()
     {
-        if (target != null)
-        {
-            MovementState();
-        }
+        if (_enemyAnimationState == EnemyAnimationStates.Knockback) return;
 
-        if (target == null) return;
+            if (target == null) return;
 
-        float distanceToTarget = Vector2.Distance(transform.position, target.position);
+            float distanceToTarget = Vector2.Distance(transform.position, target.position);
 
-       
-        if (distanceToTarget <= stoppingDistance)
-        {
-            rb.linearVelocity = Vector2.zero;
-            _anim.SetBool(AttackHashBool, true); 
-            
-            facingDirectionX = 0; 
-            facingDirectionY = 0;
-        }
+
+            if (distanceToTarget <= stoppingDistance)
+            {
+                rb.linearVelocity = Vector2.zero;
+                _anim.SetBool(AttackHashBool, true);
+
+                facingDirectionX = 0;
+                facingDirectionY = 0;
+            }
+
+            else
+            {
+                _anim.SetBool(AttackHashBool, false);
+                MovementState();
+            }
         
-        else
-        {
-            _anim.SetBool(AttackHashBool, false);
-            MovementState();
-        }
     }
+    
+    #endregion
 
+    #region Movement
+    
     private void MovementState()
     {
         Vector2 direction = (target.position - transform.position).normalized;
@@ -80,6 +105,16 @@ public class EnemyMovement : MonoBehaviour
                 FlipX(targetDirX);
                 facingDirectionY = 0;
                 _anim.SetTrigger(SideAnimationHashTrigger);
+
+                if (facingDirectionX == 1)
+                {
+                    _slider.transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+
+                else
+                {
+                    _slider.transform.rotation = Quaternion.Euler(0, 0, 180);
+                }
             }
         }
         else
@@ -111,12 +146,9 @@ public class EnemyMovement : MonoBehaviour
         transform.localScale = new Vector3(Mathf.Abs(currentScale.x) * facingDirectionX, currentScale.y, currentScale.z);
     }
     
-    public enum EnemyState
-    {
-        Attacking,
-        Knockback,
-        Chasing
-    }
+    #endregion
+    
+    #region Gizmo
     
     private void OnDrawGizmosSelected()
     {
@@ -124,6 +156,9 @@ public class EnemyMovement : MonoBehaviour
         Gizmos.DrawWireSphere(stoppingPoint.position, stoppingDistance);
     }
     
+    #endregion
+    
+    #region Methods for Enemy: Normal behaviour 
 
 /*private void OnTriggerEnter2D(Collider2D collision)
 {
@@ -146,6 +181,8 @@ private void OnTriggerExit2D(Collider2D collision)
     }
 }
 */
+
+#endregion
 }
 
 //Quelle: https://www.youtube.com/watch?v=IEadGWvewsA&t=152s&pp=0gcJCRMMAYcqIYzv Enemy Reihe 
