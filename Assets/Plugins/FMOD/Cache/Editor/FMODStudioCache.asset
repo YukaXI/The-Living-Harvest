@@ -125,10 +125,10 @@ MonoBehaviour:
   Path: ../../Sounddesign/The Living Harvest/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639231036253022277
+  lastModified: 639231629055948608
   FileSizes:
   - Name: Desktop
-    Value: 7905344
+    Value: 7906816
   Exists: 1
 --- !u!114 &-2591548976855078326
 MonoBehaviour:
@@ -210,13 +210,14 @@ MonoBehaviour:
   - {fileID: -1325365802512592017}
   - {fileID: -6640552328949485580}
   - {fileID: -5774578491812243883}
+  - {fileID: 4682653104332665266}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5326904212024597233}
   StringsBanks:
   - {fileID: 5166224879277867334}
   cacheVersion: 131859
-  cacheTime: 639231036253044547
+  cacheTime: 639231629055963832
   SerializableEventsDict:
   - key: event:/Music/InGameMusic
     index: 0
@@ -234,6 +235,8 @@ MonoBehaviour:
     index: 6
   - key: event:/SFX/Character/Interactions/SwordAttack
     index: 7
+  - key: event:/Music/FieldFightMusic
+    index: 8
 --- !u!114 &1864578167214812018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +291,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1311
+--- !u!114 &4682653104332665266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/FieldFightMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/FieldFightMusic
+  Guid:
+    Data1: 227581218
+    Data2: 1210474228
+    Data3: -686852675
+    Data4: 591546868
+  Banks:
+  - {fileID: -5326904212024597233}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 59115
 --- !u!114 &5166224879277867334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,10 +333,10 @@ MonoBehaviour:
   Path: ../../Sounddesign/The Living Harvest/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639231036253044547
+  lastModified: 639231629055963832
   FileSizes:
   - Name: Desktop
-    Value: 1384
+    Value: 1430
   Exists: 1
 --- !u!114 &6339369791941709331
 MonoBehaviour:
