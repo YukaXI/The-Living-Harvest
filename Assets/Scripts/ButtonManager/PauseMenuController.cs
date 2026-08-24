@@ -24,6 +24,7 @@ public class PauseMenuController : MonoBehaviour
     {
      PauseMenu.SetActive(false);
      Time.timeScale = 1;
+     PauseController.SetPause(false);
     }  
     
     public void Pause()
