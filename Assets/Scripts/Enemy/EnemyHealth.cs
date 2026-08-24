@@ -40,6 +40,7 @@ public class EnemyHealth : MonoBehaviour
 
    private void DestroyEnemy()
    {
+     FindAnyObjectByType<WaveManager>().AddKill();
       Destroy(this.gameObject);
    }
 
