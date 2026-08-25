@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections;
 using Project.Player;
+using UnityEngine.Events;
 
 public class NPC : MonoBehaviour, IInteractable
 {
@@ -19,6 +20,9 @@ public class NPC : MonoBehaviour, IInteractable
    
    private QuestManager _questManager;
 
+   [Header("Dialog Events")]
+   public UnityEvent onDialogueEnd;
+   
    [Header("HasTalkedToBools")] 
    [SerializeField] private bool hasTalkedToMayor = false;
    [SerializeField] private bool hasTalkedToWalter= false;
@@ -226,7 +230,10 @@ IEnumerator TypeLine()
     dialogueUI.SetDialogueText(""); //Neu
     dialogueUI.ShowDialogueUI(false); //Neu
     PauseController.SetPause(false);
+    onDialogueEnd?.Invoke();
  }
+ 
+
 
  private void HasTalkedTo()
  {

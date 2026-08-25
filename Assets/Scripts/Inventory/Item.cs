@@ -5,14 +5,13 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     [SerializeField] private string itemName;
-    [SerializeField] private int quantity;
     [SerializeField] private Sprite sprite;
     
     private InventoryManager inventoryManager;
     
     private void Awake()
     {
-        inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
+        inventoryManager = FindAnyObjectByType<InventoryManager>(FindObjectsInactive.Include);
        
     }
 
@@ -20,7 +19,7 @@ public class Item : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            inventoryManager.AddItem(itemName, quantity, sprite);
+            inventoryManager.AddItem(itemName, sprite);
             Destroy(gameObject);
         }
     }

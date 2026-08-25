@@ -166,11 +166,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: 
-  quantity: 0
   itemSprite: {fileID: 0}
   emptySprite: {fileID: 21300000, guid: fff88a9897b1b7d43a2edd32cb8cedbc, type: 3}
   isFull: 0
-  quantityText: {fileID: 0}
+  _pickedUpBook: 0
   itemImage: {fileID: 4914738700938385590}
 --- !u!1 &7932568437738309675
 GameObject:

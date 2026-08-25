@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3def7a74519455a4094adaf071a8bebd, type: 3}
+  m_Name: RoterPanda Dialogue2
+  m_EditorClassIdentifier: 
+  npcName: Penny
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "H\xE4tte nicht gedacht, dass du wirklich was bekommst."
+  - Naja. Ein Deal ist ein Deal...
+  - Hier dein Muffin.
+  autoProgressLines: 010101
+  endDialogueLines: 
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  portraits:
+  - {fileID: 9100672422402418479, guid: 3d94cc4205daf7e41b281fa4d03eb4e8, type: 3}
+  - {fileID: -3727323196313594523, guid: 3d94cc4205daf7e41b281fa4d03eb4e8, type: 3}
+  - {fileID: 9100672422402418479, guid: 3d94cc4205daf7e41b281fa4d03eb4e8, type: 3}
+  choices:
+  - dialogueIndex: 2
+    choices:
+    - hehe...
+    nextDialogueIndexes: ffffffff

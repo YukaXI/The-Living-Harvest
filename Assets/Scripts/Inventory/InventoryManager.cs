@@ -6,30 +6,31 @@ namespace Project
     {
         private NPC _npc;
         public ItemSlot[] itemSlot;
-        
-        
-        
-        public void AddItem(string itemName, int quantity, Sprite itemSprite)
+
+
+
+        public void AddItem(string itemName, Sprite itemSprite)
         {
             for (int i = 0; i < itemSlot.Length; i++)
             {
                 if (itemSlot[i].isFull == false)
                 {
-                    itemSlot[i].AddItem(itemName, quantity, itemSprite);
+                    itemSlot[i].AddItem(itemName, itemSprite);
                     return;
                 }
             }
         }
 
-        public void DeleteItem(string itemName)
+        public void RemoveItemByName(string nameToRemove)
         {
             for (int i = 0; i < itemSlot.Length; i++)
             {
-                if (itemSlot[i].isFull && itemSlot[i].itemName == itemName)
+                if (itemSlot[i] != null && itemSlot[i].isFull && itemSlot[i].itemName == nameToRemove)
                 {
-                     
+                    itemSlot[i].EmptySlot();
                 }
             }
         }
     }
 }
+

@@ -9,22 +9,23 @@ namespace Project
     public class ItemSlot : MonoBehaviour
     {
         public string itemName;
-        public int quantity;
         public Sprite itemSprite;
         [SerializeField] Sprite emptySprite;
         public bool isFull;
+        public bool _pickedUpBook = false;
         
-        [SerializeField]
-        private TMP_Text quantityText;
+       
+        [SerializeField] private Image itemImage;
         
-        [SerializeField]
-        private Image itemImage;
+        [Header("Quest Items")]
+        [SerializeField] private GameObject _flour;
+        [SerializeField] private GameObject _blueberryMuffin;
+        
         
 
-        public void AddItem(string itemName, int quantity, Sprite itemSprite)
+        public void AddItem(string itemName, Sprite itemSprite)
         {
             this.itemName = itemName;
-            this.quantity = quantity;
             this.itemSprite = itemSprite;
             isFull = true;
             
@@ -32,10 +33,27 @@ namespace Project
             itemImage.sprite = itemSprite;
         }
 
-        private void EmptySlot()
+        public void EmptySlot()
         {
-            quantityText.enabled = false;
-            itemImage.sprite = emptySprite;
+            itemSprite = null;
+            isFull = false;
+
+            if (itemImage != null)
+            {
+                itemImage.sprite = emptySprite;
+
+                if (_flour != null)
+                {
+                    _flour.SetActive(true);
+                }
+
+                else
+                {
+                    _blueberryMuffin.SetActive(true);
+                }
+
+               
+            }
         }
         
     }

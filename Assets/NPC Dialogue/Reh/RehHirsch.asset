@@ -15,18 +15,23 @@ MonoBehaviour:
   npcName: Anya
   npcPortrait: {fileID: 4961852405518250366, guid: 0c739c3b79ce1f24c94d48c5514b4299, type: 3}
   dialogueLines:
-  - Meine Mutter sagt ich soll nicht mit Fremden sprechen
-  autoProgressLines: 00
-  endDialogueLines: 01
+  - "Anyas Mutter sagt Lage im Dorf ist \xFCbel!"
+  - Monster kommen schnell, wenn wir sie nicht schnell ernten.
+  - Dein Zauber war doof.
+  - Mach Zauber in Ordnung
+  autoProgressLines: 01010101
+  endDialogueLines: 00000001
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
   portraits:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2534801286665651343, guid: b80b1335db241424989f8e3f713888e5, type: 3}
+  - {fileID: -5666682732173660654, guid: b80b1335db241424989f8e3f713888e5, type: 3}
+  - {fileID: 8471182595872628958, guid: b80b1335db241424989f8e3f713888e5, type: 3}
+  - {fileID: 2534801286665651343, guid: b80b1335db241424989f8e3f713888e5, type: 3}
   choices:
-  - dialogueIndex: 0
+  - dialogueIndex: 3
     choices:
-    - ...
+    - Mach ich. Keine Sorge.
     nextDialogueIndexes: ffffffff
