@@ -87670,66 +87670,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5559168403392899850, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
   m_PrefabInstance: {fileID: 1052440934}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &704490977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 704490972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02cc6246e7f92744a7ca20d8e207cd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actionState: 0
-  movementState: 0
---- !u!114 &704490978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 704490972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd8ecf3b6ba40a642a1c05c4ad0d7760, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  footstepTime: 0.3
-  _footstepSoundAreas: []
-  _currentPriority: -1
---- !u!114 &704490979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 704490972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -943186497
-      Data2: 1246418356
-      Data3: 127453601
-      Data4: -2110539259
-    Path: event:/SFX/Character/Footsteps/Footsteps
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!114 &704490983 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8347468179835537872, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
@@ -97858,10 +97798,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2140143959}
     m_Modifications:
-    - target: {fileID: 343174343083991370, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1101960700599984756, guid: 7766c56053190c14ea122e0458a06858, type: 3}
     - target: {fileID: 791831179217835809, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.98
@@ -97902,79 +97838,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3707272859871100555, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5559168403392899850, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5559168403392899850, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6265457000339880757, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      propertyPath: m_Size.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6265457000339880757, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.2124958
-      objectReference: {fileID: 0}
-    - target: {fileID: 6532323119452591820, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8347468179835537872, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      propertyPath: canAttack
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8347468179835537872, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8347468179835537872, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
       propertyPath: _inventory
       value: 
       objectReference: {fileID: 388402785}
     - target: {fileID: 8347468179835537872, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      propertyPath: _playerStates
-      value: 
-      objectReference: {fileID: 704490977}
-    - target: {fileID: 8347468179835537872, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
       propertyPath: _playerInputManager
       value: 
       objectReference: {fileID: 56421184}
-    - target: {fileID: 8744753655517657626, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      propertyPath: m_UpdateMode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8744753655517657626, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      propertyPath: m_CullingMode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8744753655517657626, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      propertyPath: m_AnimatePhysics
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8827506981358643777, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5559168403392899850, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 704490978}
-    - targetCorrespondingSourceObject: {fileID: 5559168403392899850, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      insertIndex: 4
-      addedObject: {fileID: 704490977}
-    - targetCorrespondingSourceObject: {fileID: 5559168403392899850, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 704490979}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
 --- !u!1 &1054692241
 GameObject:

@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -5508472335913808860, guid: 300a6de98ae566c43852e54934780c66, type: 3}
+  m_Sprite: {fileID: 1101960700599984756, guid: 7766c56053190c14ea122e0458a06858, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,12 +103,12 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 27f4e80742ddefd40a5ec73aa27fa5e0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
+  m_CullingMode: 2
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
+  m_AnimatePhysics: 1
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -166,9 +166,12 @@ GameObject:
   - component: {fileID: 791831179217835809}
   - component: {fileID: 7138250994293721446}
   - component: {fileID: 8347468179835537872}
+  - component: {fileID: 9046665258754347403}
+  - component: {fileID: 2633738621119119587}
   - component: {fileID: 5926901194085190124}
   - component: {fileID: 4803683557683495551}
   - component: {fileID: 6265457000339880757}
+  - component: {fileID: 4875350914708148196}
   m_Layer: 13
   m_Name: Player
   m_TagString: Player
@@ -232,22 +235,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovementState: 0
+  canAttack: 0
   attackPoint: {fileID: 8181731969318113261}
   weaponRange: 0.3
   enemyLayer:
     serializedVersion: 2
     m_Bits: 4096
   damage: 4
+  canMove: 1
   isPaused: 0
   _inventory: {fileID: 0}
   _playerInputManager: {fileID: 0}
   anim: {fileID: 8744753655517657626}
   _rigidbody: {fileID: 7138250994293721446}
   _baseSpeed: 3
+  _sprintSpeed: 4
   cooldown: 0.6
   timer: 0
   attackPointOffset: 0.55
   isAttacking: 0
+  isRunning: 0
+--- !u!114 &9046665258754347403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559168403392899850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd8ecf3b6ba40a642a1c05c4ad0d7760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepTime: 0.3
+  _footstepSoundAreas: []
+  _currentPriority: -1
+--- !u!114 &2633738621119119587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559168403392899850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e02cc6246e7f92744a7ca20d8e207cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionState: 0
+  movementState: 0
 --- !u!114 &5926901194085190124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,9 +345,40 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.49232465}
-  m_Size: {x: 0.5, y: 0.9774071}
+  m_Offset: {x: 0, y: 0.2124958}
+  m_Size: {x: 0.5, y: 0.5}
   m_Direction: 0
+--- !u!114 &4875350914708148196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559168403392899850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -943186497
+      Data2: 1246418356
+      Data3: 127453601
+      Data4: -2110539259
+    Path: event:/SFX/Character/Footsteps/Footsteps
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6532323119452591820
 GameObject:
   m_ObjectHideFlags: 0
