@@ -4,7 +4,9 @@ namespace Project
 {
     public class InventoryManager : MonoBehaviour
     {
+        private NPC _npc;
         public ItemSlot[] itemSlot;
+        
         
         
         public void AddItem(string itemName, int quantity, Sprite itemSprite)
@@ -15,6 +17,17 @@ namespace Project
                 {
                     itemSlot[i].AddItem(itemName, quantity, itemSprite);
                     return;
+                }
+            }
+        }
+
+        public void DeleteItem(string itemName)
+        {
+            for (int i = 0; i < itemSlot.Length; i++)
+            {
+                if (itemSlot[i].isFull && itemSlot[i].itemName == itemName)
+                {
+                     
                 }
             }
         }

@@ -6,11 +6,12 @@ using UnityEngine.UI;
 
 namespace Project
 {
-    public class ItemSlot : MonoBehaviour, IPointerClickHandler
+    public class ItemSlot : MonoBehaviour
     {
         public string itemName;
         public int quantity;
         public Sprite itemSprite;
+        [SerializeField] Sprite emptySprite;
         public bool isFull;
         
         [SerializeField]
@@ -18,9 +19,7 @@ namespace Project
         
         [SerializeField]
         private Image itemImage;
-
-        public GameObject selectedShader;
-        public bool thisItemSelected;
+        
 
         public void AddItem(string itemName, int quantity, Sprite itemSprite)
         {
@@ -33,28 +32,11 @@ namespace Project
             itemImage.sprite = itemSprite;
         }
 
-        public void OnPointerClick(PointerEventData eventData)
+        private void EmptySlot()
         {
-            if (eventData.button == PointerEventData.InputButton.Left)
-            {
-                OnLeftClick();
-            }
-            
-            if (eventData.button == PointerEventData.InputButton.Right)
-            {
-                OnRightClick();
-            }
+            quantityText.enabled = false;
+            itemImage.sprite = emptySprite;
         }
-
-        public void OnLeftClick()
-        {
-            selectedShader.SetActive(true);
-            thisItemSelected = true;
-        }
-
-        public void OnRightClick()
-        {
-            
-        }
+        
     }
 }

@@ -25,6 +25,11 @@ MonoBehaviour:
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
+  portraits:
+  - {fileID: 3551587815351775124, guid: b0bc950b6caa6d5448a5022a10c2b9f9, type: 3}
+  - {fileID: -4974442351682946633, guid: b0bc950b6caa6d5448a5022a10c2b9f9, type: 3}
+  - {fileID: 798504900316621037, guid: b0bc950b6caa6d5448a5022a10c2b9f9, type: 3}
+  - {fileID: 7251459144511303200, guid: b0bc950b6caa6d5448a5022a10c2b9f9, type: 3}
   choices:
   - dialogueIndex: 3
     choices:

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu(fileName = "NewNPCDialogue", menuName = "NPC Dialogue")]
 public class NPCDialogue : ScriptableObject
@@ -13,6 +14,7 @@ public class NPCDialogue : ScriptableObject
     public AudioClip voiceSound;
     public float voicePitch = 1f;
 
+    public Sprite[] portraits;
     public DialogueChoice[] choices;
 }
 

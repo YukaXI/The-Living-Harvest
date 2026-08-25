@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RoterPanda Dialogue
   m_EditorClassIdentifier: 
   npcName: Penny
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 8256269423010835363, guid: 0c739c3b79ce1f24c94d48c5514b4299, type: 3}
   dialogueLines:
   - "Nur \xFCber meine Leiche!"
   - Ich werde dir nichts verkaufen!
@@ -26,6 +26,12 @@ MonoBehaviour:
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
+  portraits:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   choices:
   - dialogueIndex: 3
     choices:

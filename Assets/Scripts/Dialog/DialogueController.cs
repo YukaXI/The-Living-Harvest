@@ -14,6 +14,7 @@ public class DialogueController : MonoBehaviour
     public Transform choiceContainer;
     public GameObject Choice1Prefab;
     
+    
     void Awake()
     {
         if (Instance == null) Instance = this;
@@ -28,6 +29,11 @@ public class DialogueController : MonoBehaviour
     public void SetNPCInfo(string npcName, Sprite portrait)
     {
         nameText.text = npcName;
+        portraitImage.sprite = portrait;
+    }
+
+    public void SetNewPortrait(Sprite portrait)
+    {
         portraitImage.sprite = portrait;
     }
     

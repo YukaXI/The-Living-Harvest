@@ -17,10 +17,43 @@ public class NPC : MonoBehaviour, IInteractable
    private bool isPlayerInRange;
    private PlayerInputManager inputManager;
    
+   private QuestManager _questManager;
+
+   [Header("HasTalkedToBools")] 
+   [SerializeField] private bool hasTalkedToMayor = false;
+   [SerializeField] private bool hasTalkedToWalter= false;
+   [SerializeField] private bool hasTalkedToPenny = false;
+   [SerializeField] private bool hasTalkedToMinzy = false;
+   
+   [Header("HasTalkedAgainToBools")]
+   public bool hasTalkedAgainToMinzy = false;
+   public bool hasTalkedAgainToPenny = false;
+   public bool hasTalkedAgainToWalter= false;
+   
+   [Header("NPCCircleColliders")] 
+   [SerializeField] private CircleCollider2D minzyCircleCollider;
+   [SerializeField] private CircleCollider2D martaCircleCollider;
+   [SerializeField] private CircleCollider2D walterCircleCollider;
+   [SerializeField] private CircleCollider2D pennyCircleCollider;
+   [SerializeField] private CircleCollider2D anyaCircleCollider;
+
+   [SerializeField] private GameObject _questManagerGM;
+   
+   [SerializeField] private GameObject _buergerMeister;
+   
+   
    private void Start()
    {
        dialogueUI = DialogueController.Instance;
        inputManager = FindAnyObjectByType<PlayerInputManager>();
+       _questManager = _questManagerGM.GetComponent<QuestManager>();
+       
+       minzyCircleCollider.enabled  = false;
+       martaCircleCollider.enabled  = false;
+       walterCircleCollider.enabled = false;
+       pennyCircleCollider.enabled  = false;
+       anyaCircleCollider.enabled   = false;
+       
    }
    private void Update()
    {
@@ -57,6 +90,9 @@ public void Interact()
     if (dialogueData == null || (PauseController.IsGamePaused && !isDialogueActive))
         return;
     
+    string currentNPC = gameObject.name;
+    Debug.Log(currentNPC);
+    
     if(isDialogueActive)
     {
         NextLine();
@@ -75,6 +111,8 @@ void StartDialogue()
     dialogueUI.SetNPCInfo(dialogueData.npcName, dialogueData.npcPortrait);//Neu
     dialogueUI.ShowDialogueUI(true);//Neu
     PauseController.SetPause(true);
+
+    HasTalkedTo();
     
     DisplayCurrentLine();
 }
@@ -126,6 +164,7 @@ IEnumerator TypeLine()
     isTyping = true;
     dialogueUI.SetDialogueText("");//Neu
     
+    
     foreach(char letter in dialogueData.dialogueLines[dialogueIndex])
     {
         dialogueUI.SetDialogueText(dialogueUI.dialogueText.text += letter);//neu
@@ -175,6 +214,7 @@ IEnumerator TypeLine()
  void DisplayCurrentLine()
  {
      StopAllCoroutines();
+     dialogueUI.SetNewPortrait(dialogueData.portraits[dialogueIndex]);
      StartCoroutine(TypeLine());
  }
  
@@ -187,6 +227,55 @@ IEnumerator TypeLine()
     dialogueUI.ShowDialogueUI(false); //Neu
     PauseController.SetPause(false);
  }
+
+ private void HasTalkedTo()
+ {
+     if (dialogueData.npcName == "Bürgermeister")
+     {
+         hasTalkedToMayor = true;
+
+         if (hasTalkedToMayor)
+         {
+             walterCircleCollider.enabled = true;
+         }
+     }
+
+     if (dialogueData.npcName == "Walter")
+     {
+         hasTalkedToWalter = true;
+
+         if (hasTalkedToWalter)
+         {
+             pennyCircleCollider.enabled = true;
+             _buergerMeister.SetActive(false);
+         }
+     }
+
+     if (dialogueData.npcName == "Penny")
+     {
+         hasTalkedToPenny = true;
+
+         if (hasTalkedToPenny)
+         {
+             martaCircleCollider.enabled = true;
+             minzyCircleCollider.enabled = true;
+         }
+            
+     }
+
+     if (dialogueData.npcName == "Minzy")
+     {
+         hasTalkedToMinzy = true;
+
+         if (hasTalkedToMinzy)
+         {
+             if(_questManager._minzysBook != null)
+             _questManager._minzysBook.enabled = true;
+         }
+         
+     }
+ }
+ 
 }
 
 //Quelle: https://www.youtube.com/watch?v=eSH9mzcMRqw&t=183s und https://www.youtube.com/watch?v=MPP9GLp44Pc&t=631s
