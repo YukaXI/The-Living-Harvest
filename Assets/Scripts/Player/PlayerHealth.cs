@@ -22,7 +22,15 @@ public class PlayerHealth : MonoBehaviour
             _anim.SetBool("isDead", true);
             _enemyHealth.currentHealth = 0;
         }
-        
-        
     }
+    
+    public int GetHealth()
+    {
+        if (healthBar != null)
+        {
+            return healthBar.currentHealth;
+        }
+        return 0;
+    }
+        
 }
