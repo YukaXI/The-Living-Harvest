@@ -42,6 +42,7 @@ namespace Project.Player
         
         [SerializeField] private Rigidbody2D _rigidbody;
         [SerializeField] private float _baseSpeed = 5f;
+        [SerializeField] private float _sprintSpeed = 8f; 
         [SerializeField] private float cooldown = 2;
         [SerializeField] private float timer;
 
@@ -49,6 +50,7 @@ namespace Project.Player
         private float attackPointOffset;
         
         public bool isAttacking = false;
+        public bool isRunning; 
         
         public Rigidbody2D Rigidbody => _rigidbody;
         public Vector2 CurrentMovementDirection { get; private set; }
@@ -74,6 +76,10 @@ namespace Project.Player
             {
                 timer -= Time.deltaTime;
             }
+            if (_playerInputManager != null)
+            {
+                isRunning = _playerInputManager.PlayerActions.Sprint.IsPressed();
+            }
             
             AttackPointOffset();
         }
@@ -87,8 +93,10 @@ namespace Project.Player
                 return;
             }
             CurrentMovementDirection = _playerInputManager.PlayerActions.Move.ReadValue<Vector2>();
-
-            _rigidbody.linearVelocity = CurrentMovementDirection * _baseSpeed;
+            
+            float targetSpeed = isRunning ? _sprintSpeed : _baseSpeed;
+            
+            _rigidbody.linearVelocity = CurrentMovementDirection.normalized * targetSpeed;
         }
         
         
