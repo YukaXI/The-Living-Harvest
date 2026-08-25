@@ -8,20 +8,24 @@ namespace Project.Player
     {
         private InputSystem_Actions _inputSystemActions;
         private PlayerMovement _playerMovement;
+        private PauseMenuController _pauseMenu;
 
         public InputSystem_Actions.PlayerActions PlayerActions => _inputSystemActions.Player;
         
         private InputAction _attackAction;
         private InputAction _inventoryAction;
+        private InputAction _pauseAction;
         
         public bool IsInteractPressed => _inputSystemActions.Player.Interact.WasPressedThisFrame();
         
         private void Awake()
         {
             _playerMovement = FindAnyObjectByType<PlayerMovement>();
+            _pauseMenu = FindAnyObjectByType<PauseMenuController>();
             _inputSystemActions = new InputSystem_Actions();
             
             _attackAction = _inputSystemActions.Player.Attack;
+            _pauseAction = _inputSystemActions.Player.Pause;
             _inventoryAction = _inputSystemActions.Player.Inventory;
             
         }
@@ -42,6 +46,7 @@ namespace Project.Player
             
             _attackAction.performed += _playerMovement.Attack;
             _inventoryAction.performed += _playerMovement.Inventory;
+            _pauseAction.performed +=  _pauseMenu.Pause;
            
         }
         
@@ -49,6 +54,7 @@ namespace Project.Player
         {
             _attackAction.performed -= _playerMovement.Attack;
             _inventoryAction.performed -= _playerMovement.Inventory;
+            _pauseAction.canceled -= _pauseMenu.Pause;
             
             _inputSystemActions.Disable();
         }

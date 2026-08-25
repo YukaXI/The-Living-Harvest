@@ -1,43 +1,45 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class PauseMenuController : MonoBehaviour
 {
     public GameObject PauseMenu;
-    
-    private void Update()
+    private bool isPaused = false;
+
+    private void Awake()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (PauseMenu.activeSelf)
-                {
-                Resume();
-                }
-            else
-            {
-                Pause();
-            }
-        }
+        PauseMenu.SetActive(false);
     }
     
-    public void Resume()
+    public void Pause(InputAction.CallbackContext context)
     {
-     PauseMenu.SetActive(false);
-     Time.timeScale = 1;
-     PauseController.SetPause(false);
-    }  
+        if (!context.performed) return;
+            
+            if (isPaused)
+                Continue();
+            else
+                OnPause();
+        
+    }
     
-    public void Pause()
+    public void OnPause()
     {
         PauseMenu.SetActive(true);
         Time.timeScale = 0;
+        isPaused = true;
     }
     
-    public void Exit()
+    public void Continue()
     {
+        PauseMenu.SetActive(false);
         Time.timeScale = 1;
         PauseController.SetPause(false);
-        
+        isPaused = false;
+    }  
+
+    public void Exit()
+    {
         SceneManager.LoadScene("MainMenu");
     }
 }
