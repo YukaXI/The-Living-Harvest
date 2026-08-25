@@ -76,7 +76,10 @@ namespace Project.Player
             {
                 timer -= Time.deltaTime;
             }
-            isRunning = Input.GetKey(KeyCode.LeftShift);
+            if (_playerInputManager != null)
+            {
+                isRunning = _playerInputManager.PlayerActions.Sprint.IsPressed();
+            }
             
             AttackPointOffset();
         }
