@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 52e39123f89ee2a4daa1b096ed68943a
+guid: b0bc950b6caa6d5448a5022a10c2b9f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7814527912160765563
-    second: Buch_0
+      213: 7251459144511303200
+    second: "WasserB\xFCffel Talking-Sheet_0"
+  - first:
+      213: -4974442351682946633
+    second: "WasserB\xFCffel Talking-Sheet_1"
+  - first:
+      213: 3551587815351775124
+    second: "WasserB\xFCffel Talking-Sheet_2"
+  - first:
+      213: 798504900316621037
+    second: "WasserB\xFCffel Talking-Sheet_3"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +55,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,10 +81,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Buch_0
+      name: "WasserB\xFCffel Talking-Sheet_0"
       rect:
         serializedVersion: 2
         x: 0
-        y: 11
-        width: 64
-        height: 40
+        y: 0
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 589584c54483d8390800000000000000
-      internalID: -7814527912160765563
+      spriteID: 02eaadb0cab52a460800000000000000
+      internalID: 7251459144511303200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "WasserB\xFCffel Talking-Sheet_1"
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b97740790b37fab0800000000000000
+      internalID: -4974442351682946633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "WasserB\xFCffel Talking-Sheet_2"
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49fe5aa0d46c94130800000000000000
+      internalID: 3551587815351775124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "WasserB\xFCffel Talking-Sheet_3"
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de8e7c6e9fbd41b00800000000000000
+      internalID: 798504900316621037
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: b1a542af3ed9dcd4ebfaf2b3b3c6f50e
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Buch_0: -7814527912160765563
+      "WasserB\xFCffel Talking-Sheet_0": 7251459144511303200
+      "WasserB\xFCffel Talking-Sheet_1": -4974442351682946633
+      "WasserB\xFCffel Talking-Sheet_2": 3551587815351775124
+      "WasserB\xFCffel Talking-Sheet_3": 798504900316621037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

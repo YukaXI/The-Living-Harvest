@@ -10,28 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3def7a74519455a4094adaf071a8bebd, type: 3}
-  m_Name: Motte Dialogue
+  m_Name: Katze Dialogue 3
   m_EditorClassIdentifier: 
-  npcName: Marta
-  npcPortrait: {fileID: -7945790831276037190, guid: 0c739c3b79ce1f24c94d48c5514b4299, type: 3}
+  npcName: Minzy
+  npcPortrait: {fileID: 0}
   dialogueLines:
-  - Ich bin Marta. Suchst du jemanden?
-  - Nein. Aber die rechts von mir.
-  autoProgressLines: 
+  - "Darf ich fragen wof\xFCr du das Mehl brauchst?"
+  autoProgressLines: 01
   endDialogueLines: 
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
   portraits:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: -172988667664025632, guid: 027cfb6dcd319a040aeb3b6759ff0633, type: 3}
   choices:
   - dialogueIndex: 0
     choices:
-    - Bist du Minzy?
-    nextDialogueIndexes: 01000000
-  - dialogueIndex: 1
-    choices:
-    - Danke.
+    - Nein
     nextDialogueIndexes: ffffffff

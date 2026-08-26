@@ -6,26 +6,29 @@ using UnityEngine.UI;
 
 namespace Project
 {
-    public class ItemSlot : MonoBehaviour, IPointerClickHandler
+    public class ItemSlot : MonoBehaviour
     {
         public string itemName;
-        public int quantity;
         public Sprite itemSprite;
+        [SerializeField] Sprite emptySprite;
         public bool isFull;
+        public bool _pickedUpBook = false;
         
-        [SerializeField]
-        private TMP_Text quantityText;
+       
+        [SerializeField] private Image itemImage;
         
-        [SerializeField]
-        private Image itemImage;
+        [Header("Quest Items")]
+        [SerializeField] private GameObject _book;
+        [SerializeField] private GameObject _flour;
+        [SerializeField] public GameObject _blueberryMuffin;
 
-        public GameObject selectedShader;
-        public bool thisItemSelected;
+        public bool lastWalterTalk = false;
+        
+        
 
-        public void AddItem(string itemName, int quantity, Sprite itemSprite)
+        public void AddItem(string itemName, Sprite itemSprite)
         {
             this.itemName = itemName;
-            this.quantity = quantity;
             this.itemSprite = itemSprite;
             isFull = true;
             
@@ -33,28 +36,39 @@ namespace Project
             itemImage.sprite = itemSprite;
         }
 
-        public void OnPointerClick(PointerEventData eventData)
+        public void ClearSlot()
         {
-            if (eventData.button == PointerEventData.InputButton.Left)
+            itemSprite = null;
+            isFull = false;
+
+            if (itemImage)
             {
-                OnLeftClick();
-            }
-            
-            if (eventData.button == PointerEventData.InputButton.Right)
-            {
-                OnRightClick();
+                itemImage.sprite = emptySprite;
             }
         }
 
-        public void OnLeftClick()
+        public void RemoveBook()
         {
-            selectedShader.SetActive(true);
-            thisItemSelected = true;
+            if (_flour == null) return;
+                
+            ClearSlot();
+                    
+            _flour.SetActive(true);
         }
 
-        public void OnRightClick()
+        public void RemoveFlour()
         {
-            
+            ClearSlot();
+            if (_blueberryMuffin)
+            {
+                _blueberryMuffin.SetActive(true);
+            }
         }
+
+        public void RemoveBlueberryMuffin()
+        {
+            ClearSlot();
+        }
+        
     }
 }

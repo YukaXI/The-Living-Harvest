@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 52e39123f89ee2a4daa1b096ed68943a
+guid: eaf59c479a1d8fb4f946a7c75eb95cda
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7814527912160765563
-    second: Buch_0
+      213: 1241545202126886711
+    second: "b\xFCrgermeisterTalking-Sheet_0"
+  - first:
+      213: 5627161070124852466
+    second: "b\xFCrgermeisterTalking-Sheet_1"
+  - first:
+      213: -3610545158200445088
+    second: "b\xFCrgermeisterTalking-Sheet_2"
+  - first:
+      213: -6997640745258765538
+    second: "b\xFCrgermeisterTalking-Sheet_3"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +55,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,10 +81,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Buch_0
+      name: "b\xFCrgermeisterTalking-Sheet_0"
       rect:
         serializedVersion: 2
         x: 0
-        y: 11
-        width: 64
-        height: 40
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 589584c54483d8390800000000000000
-      internalID: -7814527912160765563
+      spriteID: 7371d5988cada3110800000000000000
+      internalID: 1241545202126886711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "b\xFCrgermeisterTalking-Sheet_1"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4e2b6ed21b71e40800000000000000
+      internalID: 5627161070124852466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "b\xFCrgermeisterTalking-Sheet_2"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067b4ffde44c4edc0800000000000000
+      internalID: -3610545158200445088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "b\xFCrgermeisterTalking-Sheet_3"
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e133d0931d263ee90800000000000000
+      internalID: -6997640745258765538
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: a34651b4dc9e2f34591324f58097c342
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Buch_0: -7814527912160765563
+      "b\xFCrgermeisterTalking-Sheet_0": 1241545202126886711
+      "b\xFCrgermeisterTalking-Sheet_1": 5627161070124852466
+      "b\xFCrgermeisterTalking-Sheet_2": -3610545158200445088
+      "b\xFCrgermeisterTalking-Sheet_3": -6997640745258765538
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

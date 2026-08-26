@@ -49,7 +49,9 @@ public class PlayerFootstepSound : MonoBehaviour
             //Debug.Log(_footstepSoundAreas.Count + " " + _currentPriority);
             _footstepTimer = 0;
             _footstepEmitter.Play(); // neu hinzugefügt
-            FMOD.RESULT result = _footstepEmitter.EventInstance.setParameterByNameWithLabel("surface", _footstepSoundAreas[_currentPriority].area.ToString()); // neu hinzugefügt
+            //Debug.Log(_currentPriority + " " + _footstepSoundAreas.Count);
+            int priority = Mathf.Clamp(_currentPriority, 0, _footstepSoundAreas.Count - 1);
+            FMOD.RESULT result = _footstepEmitter.EventInstance.setParameterByNameWithLabel("surface", _footstepSoundAreas[priority].area.ToString()); // neu hinzugefügt
             //print($"Play Sound with event: {_footstepSoundAreas[_currentPriority].fmodFootstepEvent}");
         }
     }
@@ -62,7 +64,8 @@ public class PlayerFootstepSound : MonoBehaviour
             return;
         }
         _currentPriority = priority;
-        _footstepSoundAreas.Add(footstepSoundArea);
+        if(!_footstepSoundAreas.Contains(footstepSoundArea))  
+            _footstepSoundAreas.Add(footstepSoundArea);
     }
 
     private void PriorityExit()

@@ -10,28 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3def7a74519455a4094adaf071a8bebd, type: 3}
-  m_Name: "WasserB\xFCffelDialogue"
+  m_Name: "WasserB\xFCffelDialogue2"
   m_EditorClassIdentifier: 
   npcName: Walter
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - "Ach du bist also der ber\xFChmte Magier, der die Felder verflucht hat hm?"
-  - Dich lasse ich sicher nicht zum Feld.
-  - "Au\xDFer du bringst mir einen Muffin von Penny. "
-  - "Ihr geh\xF6rt hier die Dorfb\xE4ckerei."
-  autoProgressLines: 01010101
-  endDialogueLines: 00000001
+  - Du hast mir ja wirklich einen geholt.
+  - Wie lieb.
+  - "\xC4hh ja gut du kannst weitergehen"
+  - "Jetzt werde blo\xDF nicht frech"
+  autoProgressLines: 01010100
+  endDialogueLines: 00000101
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
   portraits:
-  - {fileID: 3551587815351775124, guid: b0bc950b6caa6d5448a5022a10c2b9f9, type: 3}
-  - {fileID: -4974442351682946633, guid: b0bc950b6caa6d5448a5022a10c2b9f9, type: 3}
   - {fileID: 798504900316621037, guid: b0bc950b6caa6d5448a5022a10c2b9f9, type: 3}
-  - {fileID: 7251459144511303200, guid: b0bc950b6caa6d5448a5022a10c2b9f9, type: 3}
+  - {fileID: 3551587815351775124, guid: b0bc950b6caa6d5448a5022a10c2b9f9, type: 3}
+  - {fileID: 798504900316621037, guid: b0bc950b6caa6d5448a5022a10c2b9f9, type: 3}
+  - {fileID: -4974442351682946633, guid: b0bc950b6caa6d5448a5022a10c2b9f9, type: 3}
   choices:
+  - dialogueIndex: 2
+    choices:
+    - Na endlich
+    nextDialogueIndexes: 03000000
   - dialogueIndex: 3
     choices:
-    - "Na sch\xF6n."
+    - Verzeihung
     nextDialogueIndexes: ffffffff

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "B\xFCrgermeister Dialogue"
   m_EditorClassIdentifier: 
   npcName: "B\xFCrgermeister"
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: -7419037729872503045, guid: 0c739c3b79ce1f24c94d48c5514b4299, type: 3}
   dialogueLines:
   - "Du bist derjenige, der f\xFCr all das hier Verantwortlich ist oder?"
   - Beweise mir, dass du aus guten Absichten hier bist und hilf unser Dorf.
@@ -26,6 +26,12 @@ MonoBehaviour:
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
+  portraits:
+  - {fileID: -6997640745258765538, guid: eaf59c479a1d8fb4f946a7c75eb95cda, type: 3}
+  - {fileID: -3610545158200445088, guid: eaf59c479a1d8fb4f946a7c75eb95cda, type: 3}
+  - {fileID: 5627161070124852466, guid: eaf59c479a1d8fb4f946a7c75eb95cda, type: 3}
+  - {fileID: 5627161070124852466, guid: eaf59c479a1d8fb4f946a7c75eb95cda, type: 3}
+  - {fileID: 1241545202126886711, guid: eaf59c479a1d8fb4f946a7c75eb95cda, type: 3}
   choices:
   - dialogueIndex: 0
     choices:
