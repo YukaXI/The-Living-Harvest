@@ -316,8 +316,8 @@ MonoBehaviour:
   Labels:
   - Grass
   - Dirt
-  - Stone
   - Sand
+  - Stone
   Exists: 1
 --- !u!114 &-7339270541097980861
 MonoBehaviour:
@@ -559,26 +559,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-5069550451806314441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: C:/Users/Anwender/Desktop/FMod/The Living Harvest (1)/The Living Harvest/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 639225644520000000
-  FileSizes:
-  - Name: Desktop
-    Value: 1268
-  Exists: 1
 --- !u!114 &-5010367222325621711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,7 +578,7 @@ MonoBehaviour:
     Data3: -695380085
     Data4: 962625308
   Banks:
-  - {fileID: 9012592875449353254}
+  - {fileID: 4689246665814997643}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -886,7 +866,7 @@ MonoBehaviour:
     Data3: 1711348112
     Data4: 1688890480
   Banks:
-  - {fileID: 9012592875449353254}
+  - {fileID: 4689246665814997643}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1211,7 +1191,7 @@ MonoBehaviour:
     Data3: 558867368
     Data4: 2067907689
   Banks:
-  - {fileID: 9012592875449353254}
+  - {fileID: 4689246665814997643}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1295,6 +1275,60 @@ MonoBehaviour:
   - Name: Desktop
     Value: 7888672
   Exists: 1
+--- !u!114 &-1363200559803915355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Interactions/SwordAttack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Character/Interactions/SwordAttack
+  Guid:
+    Data1: 1668633696
+    Data2: 1147129743
+    Data3: -1846650717
+    Data4: -508057174
+  Banks:
+  - {fileID: 4689246665814997643}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 939
+--- !u!114 &-1302218667063261869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/FieldFightMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/FieldFightMusic
+  Guid:
+    Data1: 227581218
+    Data2: 1210474228
+    Data3: -686852675
+    Data4: 591546868
+  Banks:
+  - {fileID: 4689246665814997643}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 59115
 --- !u!114 &-1294487693591976987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1376,6 +1410,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1311
+--- !u!114 &-979998803044012997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Sounddesign/The Living Harvest/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639231629055963832
+  FileSizes:
+  - Name: Desktop
+    Value: 1430
+  Exists: 1
 --- !u!114 &-810452788736325478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1415,7 +1469,7 @@ MonoBehaviour:
     Data3: -624982136
     Data4: -61567748
   Banks:
-  - {fileID: 9012592875449353254}
+  - {fileID: 4689246665814997643}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1485,8 +1539,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -5069550451806314441}
-  - {fileID: 9012592875449353254}
+  - {fileID: -979998803044012997}
+  - {fileID: 4689246665814997643}
   EditorEvents:
   - {fileID: 6198538157298154227}
   - {fileID: -1826880588282783161}
@@ -1494,13 +1548,16 @@ MonoBehaviour:
   - {fileID: -3892019014590386496}
   - {fileID: -789807739666496022}
   - {fileID: -5010367222325621711}
+  - {fileID: -1302218667063261869}
+  - {fileID: 7417174452116664540}
+  - {fileID: -1363200559803915355}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 9012592875449353254}
+  - {fileID: 4689246665814997643}
   StringsBanks:
-  - {fileID: -5069550451806314441}
+  - {fileID: -979998803044012997}
   cacheVersion: 131859
-  cacheTime: 639225644520000000
+  cacheTime: 639231629055963832
   SerializableEventsDict:
   - key: event:/Music/InGameMusic
     index: 0
@@ -1514,6 +1571,12 @@ MonoBehaviour:
     index: 4
   - key: event:/SFX/UI/ClickSoundPositive
     index: 5
+  - key: event:/Music/FieldFightMusic
+    index: 6
+  - key: event:/SFX/Character/Enemies/DeathSound
+    index: 7
+  - key: event:/SFX/Character/Interactions/SwordAttack
+    index: 8
 --- !u!114 &110490219461040829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1888,6 +1951,26 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &4689246665814997643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Sounddesign/The Living Harvest/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639231629055948608
+  FileSizes:
+  - Name: Desktop
+    Value: 7906816
+  Exists: 1
 --- !u!114 &4740876592929689640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2037,7 +2120,7 @@ MonoBehaviour:
     Data3: 1899102388
     Data4: -1819083932
   Banks:
-  - {fileID: 9012592875449353254}
+  - {fileID: 4689246665814997643}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2232,6 +2315,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7417174452116664540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Enemies/DeathSound
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Character/Enemies/DeathSound
+  Guid:
+    Data1: -1409602735
+    Data2: 1183741486
+    Data3: 1842223783
+    Data4: -1761905112
+  Banks:
+  - {fileID: 4689246665814997643}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 490
 --- !u!114 &7737812326135716615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2251,7 +2361,7 @@ MonoBehaviour:
     Data3: 127453601
     Data4: -2110539259
   Banks:
-  - {fileID: 9012592875449353254}
+  - {fileID: 4689246665814997643}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2382,26 +2492,6 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
---- !u!114 &9012592875449353254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: C:/Users/Anwender/Desktop/FMod/The Living Harvest (1)/The Living Harvest/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 639225644520000000
-  FileSizes:
-  - Name: Desktop
-    Value: 7888672
   Exists: 1
 --- !u!114 &9118560529427651378
 MonoBehaviour:
