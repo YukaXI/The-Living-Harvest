@@ -21,13 +21,38 @@ namespace Project
             }
         }
 
-        public void RemoveItemByName(string nameToRemove)
+        public void RemoveBook()
         {
             for (int i = 0; i < itemSlot.Length; i++)
             {
-                if (itemSlot[i] != null && itemSlot[i].isFull && itemSlot[i].itemName == nameToRemove)
+                if (itemSlot[i] != null && itemSlot[i].isFull && itemSlot[i].itemName == "Minzy's Buch")
                 {
-                    itemSlot[i].EmptySlot();
+                    itemSlot[i].RemoveBook();
+                    return;
+                }
+            }
+        }
+        
+        public void RemoveFlour()
+        {
+            for (int i = 0; i < itemSlot.Length; i++)
+            {
+                if (itemSlot[i] != null && itemSlot[i].isFull && itemSlot[i].itemName == "Mehl")
+                {
+                    itemSlot[i].RemoveFlour();
+                    return;
+                }
+            }
+        }
+        
+        public void RemoveBlueBerryMuffin()
+        {
+            for (int i = 0; i < itemSlot.Length; i++)
+            {
+                if (itemSlot[i] != null && itemSlot[i].isFull && itemSlot[i].itemName == "BlaubeerMuffin")
+                {
+                    itemSlot[i].RemoveBlueberryMuffin();
+                    return;
                 }
             }
         }

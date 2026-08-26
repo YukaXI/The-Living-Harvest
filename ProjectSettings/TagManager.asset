@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Boss
   - BuergerMeister
+  - Walter
   layers:
   - Default
   - TransparentFX

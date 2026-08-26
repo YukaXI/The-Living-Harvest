@@ -12,7 +12,6 @@ public class Item : MonoBehaviour
     private void Awake()
     {
         inventoryManager = FindAnyObjectByType<InventoryManager>(FindObjectsInactive.Include);
-       
     }
 
     private void OnTriggerEnter2D(Collider2D other)

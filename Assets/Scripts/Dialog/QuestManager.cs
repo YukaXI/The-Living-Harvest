@@ -1,5 +1,7 @@
 using System;
+using Project;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestManager : MonoBehaviour
 {
@@ -7,6 +9,7 @@ public class QuestManager : MonoBehaviour
     [SerializeField] private NPC _minzyNPC;
     [SerializeField] private NPC _walterNPC;
     [SerializeField] private NPC _pennyNPC;
+    [SerializeField] private ItemSlot _itemSlot;
 
     [Header("New Scriptable Objects Second Talk")] 
     [SerializeField] private NPCDialogue _secondMinzyDialogue;
@@ -24,7 +27,9 @@ public class QuestManager : MonoBehaviour
     [SerializeField] public GameObject _blueberryMuffin;
     [SerializeField] public GameObject _flour;
 
-    public bool _colliderDeactivate = false;
+    [SerializeField] private Image _itemImage;
+    
+    [SerializeField] private GameObject _colliderDeactivate;
 
     private void Awake()
     {
@@ -46,11 +51,13 @@ public class QuestManager : MonoBehaviour
         if( _blueberryMuffin == null) 
         {
             QuestBlueberryMuffin();
+            _itemSlot.lastWalterTalk = true;
         }
-
-        if (_secondWalterDialogue != null)
+        
+        
+        if (_itemSlot.lastWalterTalk)
         {
-            QuestField();
+            _walterNPC.dialogueData = _secondWalterDialogue;
         }
     }
 
@@ -71,9 +78,11 @@ public class QuestManager : MonoBehaviour
         _walterNPC.dialogueData = _secondWalterDialogue;
     }
 
-    private void QuestField()
+    public void QuestField()
     {
-        _walterNPC.dialogueData = _thirdWalterDialogue;
-        _colliderDeactivate = true;
+        if (_itemSlot.lastWalterTalk)
+        {
+            _colliderDeactivate.SetActive(false);
+        }
     }
 }

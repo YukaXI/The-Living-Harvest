@@ -18,8 +18,11 @@ namespace Project
         [SerializeField] private Image itemImage;
         
         [Header("Quest Items")]
+        [SerializeField] private GameObject _book;
         [SerializeField] private GameObject _flour;
-        [SerializeField] private GameObject _blueberryMuffin;
+        [SerializeField] public GameObject _blueberryMuffin;
+
+        public bool lastWalterTalk = false;
         
         
 
@@ -33,27 +36,38 @@ namespace Project
             itemImage.sprite = itemSprite;
         }
 
-        public void EmptySlot()
+        public void ClearSlot()
         {
             itemSprite = null;
             isFull = false;
 
-            if (itemImage != null)
+            if (itemImage)
             {
                 itemImage.sprite = emptySprite;
-
-                if (_flour != null)
-                {
-                    _flour.SetActive(true);
-                }
-
-                else
-                {
-                    _blueberryMuffin.SetActive(true);
-                }
-
-               
             }
+        }
+
+        public void RemoveBook()
+        {
+            if (_flour == null) return;
+                
+            ClearSlot();
+                    
+            _flour.SetActive(true);
+        }
+
+        public void RemoveFlour()
+        {
+            ClearSlot();
+            if (_blueberryMuffin)
+            {
+                _blueberryMuffin.SetActive(true);
+            }
+        }
+
+        public void RemoveBlueberryMuffin()
+        {
+            ClearSlot();
         }
         
     }

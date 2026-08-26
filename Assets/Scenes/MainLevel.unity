@@ -87912,52 +87912,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionState: 0
   movementState: 0
---- !u!114 &704490978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 704490972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd8ecf3b6ba40a642a1c05c4ad0d7760, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  footstepTime: 0.3
-  _footstepSoundAreas: []
-  _currentPriority: -1
---- !u!114 &704490979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 704490972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -943186497
-      Data2: 1246418356
-      Data3: 127453601
-      Data4: -2110539259
-    Path: event:/SFX/Character/Footsteps/Footsteps
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!114 &704490983 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8347468179835537872, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
@@ -94748,7 +94702,7 @@ Transform:
   m_GameObject: {fileID: 870621463}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39.57, y: 14.27, z: -0.04810663}
+  m_LocalPosition: {x: 39.22, y: 15.04, z: -0.04810663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -98390,13 +98344,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5559168403392899850, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
       insertIndex: 3
-      addedObject: {fileID: 704490978}
-    - targetCorrespondingSourceObject: {fileID: 5559168403392899850, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      insertIndex: 4
       addedObject: {fileID: 704490977}
-    - targetCorrespondingSourceObject: {fileID: 5559168403392899850, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 704490979}
   m_SourcePrefab: {fileID: 100100000, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
 --- !u!1 &1054692241
 GameObject:
@@ -104508,8 +104456,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 388402790}
         m_TargetAssemblyTypeName: Project.InventoryManager, Assembly-CSharp
-        m_MethodName: RemoveItemByName
-        m_Mode: 5
+        m_MethodName: RemoveBook
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -139653,7 +139601,7 @@ GameObject:
   - component: {fileID: 1453067870}
   m_Layer: 0
   m_Name: Walter
-  m_TagString: Untagged
+  m_TagString: Walter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139806,8 +139754,20 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 388402790}
         m_TargetAssemblyTypeName: Project.InventoryManager, Assembly-CSharp
-        m_MethodName: RemoveItemByName
-        m_Mode: 5
+        m_MethodName: RemoveBlueBerryMuffin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Blaubeermuffin
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1882516130}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: QuestField
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -151402,6 +151362,7 @@ MonoBehaviour:
   _minzyNPC: {fileID: 1226412684}
   _walterNPC: {fileID: 1453067869}
   _pennyNPC: {fileID: 2111984597}
+  _itemSlot: {fileID: 2061360560}
   _secondMinzyDialogue: {fileID: 11400000, guid: e3cb982253668564fbf41fc1be7d38ee, type: 2}
   _secondWalterDialogue: {fileID: 11400000, guid: 04422040332ce10438f60298a5154c9f, type: 2}
   _secondPennyDialogue: {fileID: 11400000, guid: 12b46d7c808c49e4e834e923417c538e, type: 2}
@@ -151411,7 +151372,8 @@ MonoBehaviour:
   _minzysBook: {fileID: 1567392564}
   _blueberryMuffin: {fileID: 107372232}
   _flour: {fileID: 1708393370}
-  _colliderDeactivate: 0
+  _itemImage: {fileID: 385549593}
+  _colliderDeactivate: {fileID: 411719150}
 --- !u!4 &1882602088 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7034007402955930935, guid: ffc48f28874948c47bfaa4e0b408ee4e, type: 3}
@@ -190323,8 +190285,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 388402790}
         m_TargetAssemblyTypeName: Project.InventoryManager, Assembly-CSharp
-        m_MethodName: RemoveItemByName
-        m_Mode: 5
+        m_MethodName: RemoveFlour
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -191605,6 +191567,10 @@ PrefabInstance:
       propertyPath: itemImage
       value: 
       objectReference: {fileID: 385549593}
+    - target: {fileID: 1799079227661063960, guid: ebc32bcbaf81e5145a23fe791cacd49a, type: 3}
+      propertyPath: itemSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fff88a9897b1b7d43a2edd32cb8cedbc, type: 3}
     - target: {fileID: 1799079227661063960, guid: ebc32bcbaf81e5145a23fe791cacd49a, type: 3}
       propertyPath: _blueberryMuffin
       value: 
