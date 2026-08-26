@@ -1,36 +1,80 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject[] prefab;
-    [SerializeField] private float spawnRate = 1f;
+    [SerializeField] private GameObject[] prefabWaveOne;
+    [SerializeField] private GameObject[] prefabWaveTwo;
+    [SerializeField] private GameObject[] prefabWaveThree;
     
-    public bool canSpawn = true;
-
+    [SerializeField] private float spawnRate = 1f;
+    private float timer;
+    private int currentEnemyWaveOne;
+    private int currentEnemyWaveTwo;
+    private int currentEnemyWaveThree;
+    
+    [SerializeField] private bool waveOne = true;
+    [SerializeField] private bool waveTwo = false;
+    [SerializeField] private bool waveThree = false;
+    
     private void Start()
     {
-        StartCoroutine(Spawner());
+        timer = spawnRate;
     }
 
-    private IEnumerator Spawner()
+
+    private void Update()
     {
-        WaitForSeconds wait = new WaitForSeconds(spawnRate);
+        timer -= Time.deltaTime;
 
-        while (true)
+        if (timer <= 0f)
         {
-            yield return wait;
+            SpawnEnemy();
+        }
+    }
 
-            if (canSpawn)
+    private void SpawnEnemy()
+    {
+        if (waveOne)
+        {
+            Instantiate(prefabWaveOne[currentEnemyWaveOne], transform.position, Quaternion.identity);
+            currentEnemyWaveOne++;
+            if (currentEnemyWaveOne >= prefabWaveOne.Length)
             {
-                int rand = Random.Range(0, prefab.Length);
-                GameObject enemyToSpawn = prefab[rand];
-
-                Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
+                waveOne = false;
             }
+            
+            timer = spawnRate;
+        }
+        
+        else if(waveTwo)
+        {
+            Instantiate(prefabWaveTwo[currentEnemyWaveTwo], transform.position, Quaternion.identity);
+            currentEnemyWaveTwo++;
+            if (currentEnemyWaveTwo >= prefabWaveTwo.Length)
+            {
+                waveTwo = false;
+            }
+
+            timer = spawnRate;
+        }
+        
+        else if(waveThree)
+           
+        {
+            Instantiate(prefabWaveThree[currentEnemyWaveThree], transform.position, Quaternion.identity);
+            currentEnemyWaveThree++;
+            if (currentEnemyWaveThree >= prefabWaveThree.Length) 
+            {
+                waveThree = false;
+            }
+            
+            timer = spawnRate;
         }
     }
     
 
-    //Quelle: https://www.youtube.com/watch?v=2PfJZtnfc_Q
+    //Quelle: https://www.youtube.com/watch?v=25B009a0Ks0&list=PLSR2vNOypvs76M6NQBeDHsJVh_jdWkdi1&index=12
 }
