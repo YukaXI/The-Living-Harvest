@@ -27,11 +27,11 @@ MonoBehaviour:
   voiceSound: {fileID: 0}
   voicePitch: 1
   portraits:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: -3727323196313594523, guid: 3d94cc4205daf7e41b281fa4d03eb4e8, type: 3}
+  - {fileID: 9100672422402418479, guid: 3d94cc4205daf7e41b281fa4d03eb4e8, type: 3}
+  - {fileID: -3727323196313594523, guid: 3d94cc4205daf7e41b281fa4d03eb4e8, type: 3}
+  - {fileID: 9100672422402418479, guid: 3d94cc4205daf7e41b281fa4d03eb4e8, type: 3}
+  - {fileID: -3727323196313594523, guid: 3d94cc4205daf7e41b281fa4d03eb4e8, type: 3}
   choices:
   - dialogueIndex: 3
     choices:

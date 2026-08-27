@@ -25,7 +25,7 @@ MonoBehaviour:
   voiceSound: {fileID: 0}
   voicePitch: 1
   portraits:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8937607374003515438, guid: 9a16d7e5add0f6747aa2230884879195, type: 3}
+  - {fileID: 7682376522607481417, guid: 9a16d7e5add0f6747aa2230884879195, type: 3}
+  - {fileID: -7608817372511424353, guid: 9a16d7e5add0f6747aa2230884879195, type: 3}
   choices: []
