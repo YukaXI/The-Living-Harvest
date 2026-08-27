@@ -11,6 +11,8 @@ public class EnemyBossHealth : MonoBehaviour
     private Rigidbody2D rb;
     private EnemyHealthBar _enemyHealthBar;
     private EnemyBossHealthBar _bossHealthBar;
+    
+    [SerializeField] private GameObject _bossHealthBarGM;
 
     private void Awake()
     {
@@ -19,6 +21,7 @@ public class EnemyBossHealth : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         _enemyHealthBar = GetComponentInChildren<EnemyHealthBar>();
         _bossHealthBar = FindAnyObjectByType<EnemyBossHealthBar>();
+        _bossHealthBarGM = GameObject.FindGameObjectWithTag("Boss");
     }
 
     public void ChangeHealth(int amount)
@@ -40,6 +43,11 @@ public class EnemyBossHealth : MonoBehaviour
         }
     }
 
+    public void HideBossHealthBar()
+    {
+        _bossHealthBarGM.SetActive(false);
+    }
+    
     private void DestroyEnemy()
     {
         Destroy(this.gameObject);

@@ -107,8 +107,10 @@ public void Interact()
     }
 }
 
-void StartDialogue()
+public void StartDialogue()
 {
+    StopAllCoroutines();
+    
     isDialogueActive = true;
     dialogueIndex = 0;
     
@@ -226,10 +228,13 @@ IEnumerator TypeLine()
  {
     StopAllCoroutines();
     isDialogueActive = false;
+    dialogueIndex = 0;
+    
     dialogueUI.ClearChoices();
-    dialogueUI.SetDialogueText(""); //Neu
-    dialogueUI.ShowDialogueUI(false); //Neu
+    dialogueUI.SetDialogueText(""); 
+    dialogueUI.ShowDialogueUI(false); 
     PauseController.SetPause(false);
+    
     onDialogueEnd?.Invoke();
  }
  
