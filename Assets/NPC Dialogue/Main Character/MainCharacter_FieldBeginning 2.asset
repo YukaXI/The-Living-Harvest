@@ -16,14 +16,16 @@ MonoBehaviour:
   npcPortrait: {fileID: 0}
   dialogueLines:
   - "Das werden gef\xFChlt immer mehr..."
-  - Noch mehr???
-  autoProgressLines: 0101
-  endDialogueLines: 0000
+  - Aber ich muss meine Fehler wieder gutmachen.
+  - "Ich werde die Hungersnot auch anders l\xF6sen k\xF6nnen..."
+  autoProgressLines: 010101
+  endDialogueLines: 000000
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
   portraits:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   choices: []

@@ -59,6 +59,7 @@ public class EnemyBossMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
         _slider = GetComponentInChildren<Slider>();
+        target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void FixedUpdate()

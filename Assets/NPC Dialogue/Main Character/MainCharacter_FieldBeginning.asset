@@ -15,18 +15,16 @@ MonoBehaviour:
   npcName: Magier
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - Hm.. Seltsammer Ort...
-  - "Die Felder h\xF6ren auch nciht auf."
-  - Oh mist da kommt...
-  - "Gem\xFCse angelaufen?!?"
-  autoProgressLines: 01010101
-  endDialogueLines: 00000000
+  - Ich werde dieses Dorf auch befreien.
+  - Wenn ich den Kern des Zaubers immer weiter dezimiere,
+  - dann werde ich den Fluch, den ich dieser Welt auferlegt habe aufheben
+  autoProgressLines: 010101
+  endDialogueLines: 000000
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
   portraits:
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

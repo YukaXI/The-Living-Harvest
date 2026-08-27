@@ -15,8 +15,8 @@ MonoBehaviour:
   npcName: Magier
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - Langsam reichts aber.
-  - "Moment sind das Kohlk\xF6pfe??"
+  - Moment ist das Blumenkohl?
+  - Das hatte ich auch noch nicht.
   autoProgressLines: 0101
   endDialogueLines: 0000
   autoProgressDelay: 1.5

@@ -15,8 +15,8 @@ MonoBehaviour:
   npcName: Magier
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - "Ne jetzt \xFCbertreiben die aber."
-  - Das kann nicht wahr sein.
+  - Oh Gott.
+  - "Der ist ja so gro\xDF wie ein Haus!"
   autoProgressLines: 0101
   endDialogueLines: 0000
   autoProgressDelay: 1.5
