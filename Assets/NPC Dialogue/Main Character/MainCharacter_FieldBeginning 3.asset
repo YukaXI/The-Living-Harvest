@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3def7a74519455a4094adaf071a8bebd, type: 3}
+  m_Name: MainCharacter_FieldBeginning 3
+  m_EditorClassIdentifier: 
+  npcName: Magier
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "Ne jetzt \xFCbertreiben die aber."
+  - Das kann nicht wahr sein.
+  autoProgressLines: 0101
+  endDialogueLines: 0000
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  portraits:
+  - {fileID: 0}
+  - {fileID: 0}
+  choices: []
