@@ -380,8 +380,9 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../Sounddesign/The Living Harvest/The Living Harvest.fspro
-  sourceBankPath: ../../Sounddesign/The Living Harvest/Build
+  sourceProjectPath: C:/Users/Anwender/Desktop/FMod/The Living Harvest/The Living
+    Harvest.fspro
+  sourceBankPath: C:/Users/Anwender/Desktop/FMod/The Living Harvest/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
