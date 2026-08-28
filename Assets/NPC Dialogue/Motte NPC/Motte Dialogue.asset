@@ -15,7 +15,7 @@ MonoBehaviour:
   npcName: Marta
   npcPortrait: {fileID: -7945790831276037190, guid: 0c739c3b79ce1f24c94d48c5514b4299, type: 3}
   dialogueLines:
-  - Ich bin Marta. Suchst du jemanden?
+  - Hey kann ich dir behilflich sein?
   - Nein. Aber die rechts von mir.
   autoProgressLines: 
   endDialogueLines: 

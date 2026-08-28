@@ -109933,11 +109933,11 @@ PrefabInstance:
       objectReference: {fileID: -5508472335913808860, guid: 300a6de98ae566c43852e54934780c66, type: 3}
     - target: {fileID: 791831179217835809, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -80.44
+      value: -16.7
       objectReference: {fileID: 0}
     - target: {fileID: 791831179217835809, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.87
+      value: 7.46
       objectReference: {fileID: 0}
     - target: {fileID: 791831179217835809, guid: 1df037073f2fd274481cef3e6b9ff9dd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -110786,7 +110786,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.6710664, y: 4.0741243}
+  m_Offset: {x: 0.6710663, y: 3.7329235}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -110796,7 +110796,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.892064, y: 2.9615192}
+  m_Size: {x: 5.892064, y: 3.643921}
   m_EdgeRadius: 0
 --- !u!320 &1074881478
 PlayableDirector:
@@ -110831,6 +110831,10 @@ PlayableDirector:
     value: {fileID: 1612593003}
   - key: {fileID: -4654804940284919486, guid: aa1e78f52f49ce44f961c84c067ade9a, type: 2}
     value: {fileID: 1074881475}
+  - key: {fileID: 6505055222616391111, guid: aa1e78f52f49ce44f961c84c067ade9a, type: 2}
+    value: {fileID: 1612593003}
+  - key: {fileID: -9159937034538213556, guid: aa1e78f52f49ce44f961c84c067ade9a, type: 2}
+    value: {fileID: 1529092627}
   m_ExposedReferences:
     m_References:
     - 321ad915d3d785d4a9d2c8fe337c899f: {fileID: 0}
@@ -123825,7 +123829,7 @@ MonoBehaviour:
   onDialogueEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1665074325}
         m_TargetAssemblyTypeName: Project.InventoryManager, Assembly-CSharp
         m_MethodName: RemoveBook
         m_Mode: 1
@@ -159594,7 +159598,7 @@ Transform:
   m_GameObject: {fileID: 1441542828}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -83.26654, y: -57.952633, z: 313.41068}
+  m_LocalPosition: {x: -19.526537, y: -33.622635, z: 313.41068}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -160272,7 +160276,7 @@ MonoBehaviour:
   onDialogueEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1665074325}
         m_TargetAssemblyTypeName: Project.InventoryManager, Assembly-CSharp
         m_MethodName: RemoveBlueBerryMuffin
         m_Mode: 1
@@ -162074,7 +162078,7 @@ Transform:
   m_GameObject: {fileID: 1502252033}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -79.864, y: -57.74536, z: 313.41068}
+  m_LocalPosition: {x: -19.526537, y: -33.622635, z: 313.41068}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -216740,7 +216744,7 @@ MonoBehaviour:
   onDialogueEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1665074325}
         m_TargetAssemblyTypeName: Project.InventoryManager, Assembly-CSharp
         m_MethodName: RemoveFlour
         m_Mode: 1
