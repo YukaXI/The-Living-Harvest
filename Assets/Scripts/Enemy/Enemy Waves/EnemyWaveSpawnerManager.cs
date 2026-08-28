@@ -27,7 +27,6 @@ public class EnemyWaveSpawnerManager : MonoBehaviour
         _triggerDialogue3GM.SetActive(false);
         _triggerDialogue4GM.SetActive(false);
         _triggerDialogue5GM.SetActive(false);
-       _triggerDialogue1.StartDialogue();
     }
 
     public void WaveActiveOne()

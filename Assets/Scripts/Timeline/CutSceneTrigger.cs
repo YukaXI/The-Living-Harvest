@@ -1,6 +1,7 @@
 using Project.Player;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class CutSceneTrigger : MonoBehaviour
 {
@@ -52,5 +53,10 @@ public class CutSceneTrigger : MonoBehaviour
         public void DestroyMeisterNPC()
         {
                 Destroy(meisterNPC);
+        }
+
+        public void TeleportToField()
+        {
+                SceneManager.LoadScene("TestSceneForRobin");
         }
 }
