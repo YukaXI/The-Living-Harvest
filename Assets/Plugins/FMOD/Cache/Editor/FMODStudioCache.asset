@@ -290,6 +290,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 73500
+--- !u!114 &-8171158745013537688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MainMenuMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MainMenuMusic
+  Guid:
+    Data1: 1741986774
+    Data2: 1133616420
+    Data3: 1711348112
+    Data4: 1688890480
+  Banks:
+  - {fileID: 3413632121551907428}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 73500
+--- !u!114 &-8095075181733351594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HoverSound/UI-Click
+  m_EditorClassIdentifier: 
+  Name: UI-Click
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2252582777
+    data2: 2773705300
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-8046914798155091505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,6 +397,34 @@ MonoBehaviour:
   - Sand
   - Stone
   Exists: 1
+--- !u!114 &-7403673271077787616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Footsteps/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Character/Footsteps/Footsteps
+  Guid:
+    Data1: -943186497
+    Data2: 1246418356
+    Data3: 127453601
+    Data4: -2110539259
+  Banks:
+  - {fileID: 3413632121551907428}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3734302236903406687}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-7339270541097980861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,6 +712,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-5121435753269613148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/ClickSoundNegative
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/ClickSoundNegative
+  Guid:
+    Data1: -1316488571
+    Data2: 1076564456
+    Data3: 558867368
+    Data4: 2067907689
+  Banks:
+  - {fileID: 3413632121551907428}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1311
 --- !u!114 &-5010367222325621711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,6 +842,30 @@ MonoBehaviour:
     data1: 2066510500
     data2: 3750885949
   Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-4759534410057466504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/InGameMusic/MusicRegions
+  m_EditorClassIdentifier: 
+  Name: MusicRegions
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 1390262040
+    data2: 1200770372
+  Type: 1
   IsGlobal: 0
   Labels: []
   Exists: 1
@@ -1004,6 +1134,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-3734302236903406687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/surface
+  m_EditorClassIdentifier: 
+  Name: surface
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 2231515932
+    data2: 401439500
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Grass
+  - Dirt
+  - Stone
+  - Sand
+  Exists: 1
 --- !u!114 &-3583966630242031960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1029,6 +1187,34 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: -5453901502904057552}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3538691083105549852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/ClickSoundPositive
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/ClickSoundPositive
+  Guid:
+    Data1: 1072705771
+    Data2: 1188425574
+    Data3: -695380085
+    Data4: 962625308
+  Banks:
+  - {fileID: 3413632121551907428}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 106147280019965540}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1712,45 +1898,60 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -17015976026814522}
-  - {fileID: -6841307510884859532}
+  - {fileID: 2962987137329915705}
+  - {fileID: 3413632121551907428}
   EditorEvents:
-  - {fileID: -8485698734477619258}
-  - {fileID: 3020795966511056217}
-  - {fileID: -4589344848544595435}
-  - {fileID: 9074100493899202380}
-  - {fileID: -5961966666408708103}
-  - {fileID: 7692587407363743486}
-  - {fileID: -1650949798347244243}
-  - {fileID: 2239057373744543258}
-  - {fileID: 5265411138150766462}
+  - {fileID: 3424981575770702358}
+  - {fileID: -5121435753269613148}
+  - {fileID: -7403673271077787616}
+  - {fileID: -8171158745013537688}
+  - {fileID: 1682033819421887476}
+  - {fileID: -3538691083105549852}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -6841307510884859532}
+  - {fileID: 3413632121551907428}
   StringsBanks:
-  - {fileID: -17015976026814522}
+  - {fileID: 2962987137329915705}
   cacheVersion: 131859
-  cacheTime: 639231629055963832
+  cacheTime: 639225644520000000
   SerializableEventsDict:
-  - key: event:/Music/FieldFightMusic
-    index: 0
-  - key: event:/SFX/Character/Enemies/DeathSound
-    index: 1
   - key: event:/Music/InGameMusic
-    index: 2
-  - key: event:/SFX/Character/Interactions/SwordAttack
-    index: 3
+    index: 0
   - key: event:/SFX/UI/ClickSoundNegative
-    index: 4
+    index: 1
   - key: event:/SFX/Character/Footsteps/Footsteps
-    index: 5
+    index: 2
   - key: event:/Music/MainMenuMusic
-    index: 6
+    index: 3
   - key: event:/SFX/UI/HoverSound
-    index: 7
+    index: 4
   - key: event:/SFX/UI/ClickSoundPositive
-    index: 8
+    index: 5
 --- !u!114 &101554707259681888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ClickSoundPositive/UI-ClickSound
+  m_EditorClassIdentifier: 
+  Name: UI-ClickSound
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2066510500
+    data2: 3750885949
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &106147280019965540
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1905,6 +2106,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &1682033819421887476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/HoverSound
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/HoverSound
+  Guid:
+    Data1: -1004371494
+    Data2: 1267332311
+    Data3: -624982136
+    Data4: -61567748
+  Banks:
+  - {fileID: 3413632121551907428}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8095075181733351594}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1793612281498725105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2096,6 +2325,26 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &2962987137329915705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Anwender/Desktop/FMod/The Living Harvest (1)/The Living Harvest/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639225644520000000
+  FileSizes:
+  - Name: Desktop
+    Value: 1268
+  Exists: 1
 --- !u!114 &2977944012277779901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2147,6 +2396,54 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 490
+--- !u!114 &3413632121551907428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Anwender/Desktop/FMod/The Living Harvest (1)/The Living Harvest/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639225644520000000
+  FileSizes:
+  - Name: Desktop
+    Value: 7888672
+  Exists: 1
+--- !u!114 &3424981575770702358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/InGameMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/InGameMusic
+  Guid:
+    Data1: 1050717530
+    Data2: 1162251107
+    Data3: 1899102388
+    Data4: -1819083932
+  Banks:
+  - {fileID: 3413632121551907428}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -4759534410057466504}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 514115
 --- !u!114 &3507552266701550190
 MonoBehaviour:
   m_ObjectHideFlags: 0
