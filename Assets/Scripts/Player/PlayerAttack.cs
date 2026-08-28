@@ -24,7 +24,7 @@ public class PlayerAttack : MonoBehaviour
 
         foreach (Collider2D enemy in enemies)
         {
-            if (enemies.Length > 0)
+            if (enemies.Length > 0 && enemies[0].CompareTag("Enemy"))
             {
                 enemies[0].GetComponent<EnemyHealth>().ChangeHealth(-_playerMovement.damage);
                 enemies[0].GetComponent<EnemyKnockback>().Knockback(transform, _knockbackForce, stunTime);
