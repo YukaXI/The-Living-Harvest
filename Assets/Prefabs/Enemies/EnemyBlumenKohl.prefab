@@ -361,6 +361,7 @@ GameObject:
   - component: {fileID: 988211432811459806}
   - component: {fileID: 261097074917937928}
   - component: {fileID: 4126740807531573524}
+  - component: {fileID: -5224447810499159234}
   m_Layer: 12
   m_Name: EnemyBlumenKohl
   m_TagString: Enemy
@@ -593,6 +594,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6533a0671f50754a9aaca8235b454d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5224447810499159234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8188370085567535026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8056f8d32de3f40a11774c2d4a9ce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8479484070705975682
