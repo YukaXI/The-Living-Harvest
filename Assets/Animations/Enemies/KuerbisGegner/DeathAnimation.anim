@@ -392,6 +392,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.8
+    functionName: Play
+    data: "event:/SFX/Character/Enemies/K\xFCrbisBoss/Death"
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 8.4
     functionName: DestroyEnemy
     data: 

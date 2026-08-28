@@ -361,10 +361,10 @@ MonoBehaviour:
   Path: ../../Sounddesign/The Living Harvest/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639231629055963832
+  lastModified: 639235485619159696
   FileSizes:
   - Name: Desktop
-    Value: 1430
+    Value: 1856
   Exists: 1
 --- !u!114 &-8171158745013537688
 MonoBehaviour:
@@ -500,6 +500,33 @@ MonoBehaviour:
   - Sand
   - Stone
   Exists: 1
+--- !u!114 &-7437589037494565816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Enemies/Kohlrabi/DeathSound
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Character/Enemies/Kohlrabi/DeathSound
+  Guid:
+    Data1: 877073113
+    Data2: 1240284093
+    Data3: 2115720337
+    Data4: -251249831
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 490
 --- !u!114 &-7403673271077787616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,6 +699,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1430
   Exists: 1
+--- !u!114 &-6600440381851492872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Enemies/Blumenkohl/Attack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Character/Enemies/Blumenkohl/Attack
+  Guid:
+    Data1: -1359856799
+    Data2: 1184172914
+    Data3: -1519216724
+    Data4: -1337410217
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-6228666915128422344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,6 +845,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-5151873139221544707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/SFX/Character/Enemies/K\xFCrbisBoss/Death"
+  m_EditorClassIdentifier: 
+  Path: "event:/SFX/Character/Enemies/K\xFCrbisBoss/Death"
+  Guid:
+    Data1: -58622066
+    Data2: 1073866029
+    Data3: -1164064889
+    Data4: 97126353
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &-5144137353871424209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -870,33 +951,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-4999366228775649855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Character/Enemies/DeathSound
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Character/Enemies/DeathSound
-  Guid:
-    Data1: -1409602735
-    Data2: 1183741486
-    Data3: 1842223783
-    Data4: -1761905112
-  Banks:
-  - {fileID: 7293655377649464977}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 490
 --- !u!114 &-4888956042085430910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,6 +1108,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 514115
+--- !u!114 &-4608337014575793415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Endcreditscene
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Endcreditscene
+  Guid:
+    Data1: 1971757876
+    Data2: 1221636330
+    Data3: 2003242644
+    Data4: -1588207787
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4589344848544595435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1697,6 +1778,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1652073491393127994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Enemies/Kohlrabi/DamageTaken
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Character/Enemies/Kohlrabi/DamageTaken
+  Guid:
+    Data1: -120518595
+    Data2: 1183911341
+    Data3: -4244563
+    Data4: -1449122054
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 444
 --- !u!114 &-1650949798347244243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1724,6 +1832,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 73500
+--- !u!114 &-1478170790986512842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/SFX/Character/Enemies/K\xFCrbisBoss/Attack"
+  m_EditorClassIdentifier: 
+  Path: "event:/SFX/Character/Enemies/K\xFCrbisBoss/Attack"
+  Guid:
+    Data1: -1983746278
+    Data2: 1305250429
+    Data3: 586627743
+    Data4: -589857132
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &-1453418491882716765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2056,7 +2191,6 @@ MonoBehaviour:
   - {fileID: 7293655377649464977}
   EditorEvents:
   - {fileID: 3133894786036136840}
-  - {fileID: -4999366228775649855}
   - {fileID: 6660169652442074422}
   - {fileID: 6216444261116022041}
   - {fileID: 1796336679816796547}
@@ -2064,32 +2198,57 @@ MonoBehaviour:
   - {fileID: -7667966425228623172}
   - {fileID: -8320271872293946091}
   - {fileID: -8489808956940805769}
+  - {fileID: -1478170790986512842}
+  - {fileID: 5783874782713933996}
+  - {fileID: -4608337014575793415}
+  - {fileID: 1775250656023770503}
+  - {fileID: -1652073491393127994}
+  - {fileID: -6600440381851492872}
+  - {fileID: -5151873139221544707}
+  - {fileID: -7437589037494565816}
+  - {fileID: 5703807932317199525}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7293655377649464977}
   StringsBanks:
   - {fileID: -8183043699657362828}
   cacheVersion: 131859
-  cacheTime: 639231629055963832
+  cacheTime: 639235485619159696
   SerializableEventsDict:
   - key: event:/Music/FieldFightMusic
     index: 0
-  - key: event:/SFX/Character/Enemies/DeathSound
-    index: 1
   - key: event:/Music/InGameMusic
-    index: 2
+    index: 1
   - key: event:/SFX/Character/Interactions/SwordAttack
-    index: 3
+    index: 2
   - key: event:/SFX/UI/ClickSoundNegative
-    index: 4
+    index: 3
   - key: event:/SFX/Character/Footsteps/Footsteps
-    index: 5
+    index: 4
   - key: event:/Music/MainMenuMusic
-    index: 6
+    index: 5
   - key: event:/SFX/UI/HoverSound
-    index: 7
+    index: 6
   - key: event:/SFX/UI/ClickSoundPositive
+    index: 7
+  - key: "event:/SFX/Character/Enemies/K\xFCrbisBoss/Attack"
     index: 8
+  - key: event:/SFX/Character/Enemies/Blumenkohl/Death
+    index: 9
+  - key: event:/Music/Endcreditscene
+    index: 10
+  - key: "event:/SFX/Character/Enemies/K\xFCrbisBoss/DamageTaken"
+    index: 11
+  - key: event:/SFX/Character/Enemies/Kohlrabi/DamageTaken
+    index: 12
+  - key: event:/SFX/Character/Enemies/Blumenkohl/Attack
+    index: 13
+  - key: "event:/SFX/Character/Enemies/K\xFCrbisBoss/Death"
+    index: 14
+  - key: event:/SFX/Character/Enemies/Kohlrabi/DeathSound
+    index: 15
+  - key: event:/SFX/Character/Enemies/Kohlrabi/Attack
+    index: 16
 --- !u!114 &101554707259681888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2297,6 +2456,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1775250656023770503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/SFX/Character/Enemies/K\xFCrbisBoss/DamageTaken"
+  m_EditorClassIdentifier: 
+  Path: "event:/SFX/Character/Enemies/K\xFCrbisBoss/DamageTaken"
+  Guid:
+    Data1: 1178915382
+    Data2: 1252404448
+    Data3: 811989436
+    Data4: -822037354
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &1793612281498725105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2968,6 +3154,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 73500
+--- !u!114 &5703807932317199525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Enemies/Kohlrabi/Attack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Character/Enemies/Kohlrabi/Attack
+  Guid:
+    Data1: -1700620058
+    Data2: 1275055276
+    Data3: 942275743
+    Data4: -1032886483
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &5783874782713933996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Enemies/Blumenkohl/Death
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Character/Enemies/Blumenkohl/Death
+  Guid:
+    Data1: 1604762655
+    Data2: 1114988826
+    Data3: 440120759
+    Data4: 455537374
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1141
 --- !u!114 &5801171031303317465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3251,10 +3491,10 @@ MonoBehaviour:
   Path: ../../Sounddesign/The Living Harvest/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639231629055948608
+  lastModified: 639235485619136761
   FileSizes:
   - Name: Desktop
-    Value: 7906816
+    Value: 8354112
   Exists: 1
 --- !u!114 &7306092131851469781
 MonoBehaviour:

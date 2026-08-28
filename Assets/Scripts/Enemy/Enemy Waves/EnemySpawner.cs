@@ -163,7 +163,7 @@ public class EnemySpawner : MonoBehaviour
     
     private bool AreAllEnemiesDead(int enemiesAlive)
     {
-        Debug.Log("All Enemies are Dead");
+        Debug.Log("Enemie wech");
         return GameObject.FindGameObjectsWithTag("Enemy").Length == enemiesAlive;
     }
 
