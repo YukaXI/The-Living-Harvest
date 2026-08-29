@@ -58,15 +58,17 @@ namespace Project
 
         public void RemoveFlour()
         {
+            if (_blueberryMuffin == null) return;
+            
             ClearSlot();
-            if (_blueberryMuffin)
-            {
-                _blueberryMuffin.SetActive(true);
-            }
+
+            _blueberryMuffin.SetActive(true);
+            
         }
 
         public void RemoveBlueberryMuffin()
         {
+            Debug.Log("Muffin entfernt");
             ClearSlot();
         }
         
