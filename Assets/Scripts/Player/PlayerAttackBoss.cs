@@ -16,7 +16,7 @@ public class PlayerAttackBoss : MonoBehaviour
         _playerMovement = FindAnyObjectByType<PlayerMovement>();
     }
     
-    public void DealDamage()
+    public void DealDamageToBoss()
     {
         _playerMovement.isAttacking = false;
         Collider2D[] enemies = Physics2D.OverlapCircleAll(_playerMovement.attackPoint.position, _playerMovement.weaponRange, _playerMovement.enemyLayer);

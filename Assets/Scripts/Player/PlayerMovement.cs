@@ -39,6 +39,7 @@ namespace Project.Player
         [SerializeField] private GameObject _inventory;
         [SerializeField] private PlayerInputManager _playerInputManager;
         [SerializeField] private Animator anim;
+        private InventoryManager _inventoryManager;
         
         [SerializeField] private Rigidbody2D _rigidbody;
         [SerializeField] private float _baseSpeed = 5f;
@@ -59,6 +60,7 @@ namespace Project.Player
         {
             _rigidbody = GetComponent<Rigidbody2D>();
             anim = GetComponentInChildren<Animator>();
+            _inventoryManager = FindAnyObjectByType<InventoryManager>();
             _inventory.SetActive(false);
             
         }
@@ -177,6 +179,14 @@ namespace Project.Player
             else if (anim.GetFloat(HashMovementDirX) == -1) 
             {
                 attackPoint.localPosition = new Vector3(attackPointOffset, 0.5f, 0);
+            }
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (_inventoryManager != null)
+            {
+                _inventoryManager._currentNPC = other.gameObject;
             }
         }
     }

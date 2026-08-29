@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Project
@@ -6,8 +7,8 @@ namespace Project
     {
         private NPC _npc;
         public ItemSlot[] itemSlot;
-
-
+        
+        public GameObject _currentNPC;
 
         public void AddItem(string itemName, Sprite itemSprite)
         {
@@ -25,11 +26,12 @@ namespace Project
         {
             for (int i = 0; i < itemSlot.Length; i++)
             {
-                if (itemSlot[i] != null && itemSlot[i].isFull && itemSlot[i].itemName == "Minzy's Buch")
+                if (itemSlot[i] != null && itemSlot[i].isFull && itemSlot[i].itemName == "Minzy's Buch" && _currentNPC.CompareTag("Minzy"))
                 {
                     itemSlot[i].RemoveBook();
                     return;
                 }
+               
             }
         }
         
@@ -37,11 +39,12 @@ namespace Project
         {
             for (int i = 0; i < itemSlot.Length; i++)
             {
-                if (itemSlot[i] != null && itemSlot[i].isFull && itemSlot[i].itemName == "Mehl")
+                if (itemSlot[i] != null && itemSlot[i].isFull && itemSlot[i].itemName == "Mehl" && _currentNPC.CompareTag("Penny"))
                 {
                     itemSlot[i].RemoveFlour();
                     return;
                 }
+                
             }
         }
         
@@ -49,11 +52,13 @@ namespace Project
         {
             for (int i = 0; i < itemSlot.Length; i++)
             {
-                if (itemSlot[i] != null && itemSlot[i].isFull && itemSlot[i].itemName == "BlaubeerMuffin")
+                if (itemSlot[i] != null && itemSlot[i].isFull && itemSlot[i].itemName == "BlaubeerMuffin" && _currentNPC.CompareTag("Walter"))
                 {
+                    Debug.Log("Muffinwird entfernt");
                     itemSlot[i].RemoveBlueberryMuffin();
                     return;
                 }
+                
             }
         }
     }

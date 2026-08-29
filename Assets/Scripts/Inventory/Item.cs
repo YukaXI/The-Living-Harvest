@@ -1,4 +1,5 @@
 using System;
+using FMODUnity;
 using Project;
 using UnityEngine;
 
@@ -20,6 +21,7 @@ public class Item : MonoBehaviour
         {
             inventoryManager.AddItem(itemName, sprite);
             Destroy(gameObject);
+            RuntimeManager.PlayOneShot("event:/SFX/Character/Interactions/ItemPickup");
         }
     }
 }
