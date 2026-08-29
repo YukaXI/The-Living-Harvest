@@ -164,7 +164,8 @@ public class EnemySpawner : MonoBehaviour
     private bool AreAllEnemiesDead(int enemiesAlive)
     {
         Debug.Log("Enemie wech");
-        return GameObject.FindGameObjectsWithTag("Enemy").Length == enemiesAlive;
+        return GameObject.FindGameObjectsWithTag("Enemy").Length +
+               GameObject.FindGameObjectsWithTag("Boss").Length == enemiesAlive;
     }
 
     //Quelle: https://www.youtube.com/watch?v=25B009a0Ks0&list=PLSR2vNOypvs76M6NQBeDHsJVh_jdWkdi1&index=12

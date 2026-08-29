@@ -20,8 +20,9 @@ MonoBehaviour:
   - "Nicht nachdem DU daf\xFCr gesorgt hast, dass wir keine Saat mehr Pflanzen k\xF6nnen."
   - "Ohne dass wir von mutierten GEM\xDCSE ANGEGRIFFEN WERDEN!"
   - "Wenn du mir von Minzy Mehl besorgst, dann w\xFCrde ich dir einen geben."
-  autoProgressLines: 01010101000000
-  endDialogueLines: 00000001000000
+  - Sie steht am Verkaufsstand.
+  autoProgressLines: 01010101010100
+  endDialogueLines: 00000000000100
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
@@ -32,12 +33,13 @@ MonoBehaviour:
   - {fileID: -3727323196313594523, guid: 3d94cc4205daf7e41b281fa4d03eb4e8, type: 3}
   - {fileID: 9100672422402418479, guid: 3d94cc4205daf7e41b281fa4d03eb4e8, type: 3}
   - {fileID: -3727323196313594523, guid: 3d94cc4205daf7e41b281fa4d03eb4e8, type: 3}
+  - {fileID: 9100672422402418479, guid: 3d94cc4205daf7e41b281fa4d03eb4e8, type: 3}
   choices:
   - dialogueIndex: 3
     choices:
     - "Ich br\xE4uchte eigentlich nur einen Muffin"
     nextDialogueIndexes: 04000000
-  - dialogueIndex: 4
+  - dialogueIndex: 5
     choices:
     - "Die m\xF6gen hier wohl Tauschhandel"
     nextDialogueIndexes: ffffffff

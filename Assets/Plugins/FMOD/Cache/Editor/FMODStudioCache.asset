@@ -361,10 +361,10 @@ MonoBehaviour:
   Path: ../../Sounddesign/The Living Harvest/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639235485619159696
+  lastModified: 639236221621100385
   FileSizes:
   - Name: Desktop
-    Value: 1856
+    Value: 2140
   Exists: 1
 --- !u!114 &-8171158745013537688
 MonoBehaviour:
@@ -445,6 +445,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7841152308765428574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Interactions/PlayerDeathSound
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Character/Interactions/PlayerDeathSound
+  Guid:
+    Data1: -1088435737
+    Data2: 1181483593
+    Data3: -897973603
+    Data4: 1947578744
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1018
 --- !u!114 &-7667966425228623172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,6 +499,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 73500
+--- !u!114 &-7553442603784321082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/SFX/Ambience/K\xFCste"
+  m_EditorClassIdentifier: 
+  Path: "event:/SFX/Ambience/K\xFCste"
+  Guid:
+    Data1: 1688918791
+    Data2: 1315718434
+    Data3: 1914502315
+    Data4: -1388996051
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 88480
 --- !u!114 &-7519305793326906818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,6 +753,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1430
   Exists: 1
+--- !u!114 &-6605314970495125888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Interactions/ItemPickup
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Character/Interactions/ItemPickup
+  Guid:
+    Data1: -257941861
+    Data2: 1325609888
+    Data3: -1501489535
+    Data4: -13805274
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1506
 --- !u!114 &-6600440381851492872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1128,13 +1209,13 @@ MonoBehaviour:
     Data4: -1588207787
   Banks:
   - {fileID: 7293655377649464977}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 129724
 --- !u!114 &-4589344848544595435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1984,6 +2065,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-1213411666471886727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambience/Fische
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambience/Fische
+  Guid:
+    Data1: -791244609
+    Data2: 1128406479
+    Data3: -1120083568
+    Data4: -131099308
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &-1197785327510804613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2207,13 +2315,19 @@ MonoBehaviour:
   - {fileID: -5151873139221544707}
   - {fileID: -7437589037494565816}
   - {fileID: 5703807932317199525}
+  - {fileID: 1289930655983549461}
+  - {fileID: -7553442603784321082}
+  - {fileID: -6605314970495125888}
+  - {fileID: -1213411666471886727}
+  - {fileID: 5298247730689481108}
+  - {fileID: -7841152308765428574}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7293655377649464977}
   StringsBanks:
   - {fileID: -8183043699657362828}
   cacheVersion: 131859
-  cacheTime: 639235485619159696
+  cacheTime: 639236221621100385
   SerializableEventsDict:
   - key: event:/Music/FieldFightMusic
     index: 0
@@ -2249,6 +2363,18 @@ MonoBehaviour:
     index: 15
   - key: event:/SFX/Character/Enemies/Kohlrabi/Attack
     index: 16
+  - key: "event:/SFX/Ambience/V\xF6gelZwitschernWald"
+    index: 17
+  - key: "event:/SFX/Ambience/K\xFCste"
+    index: 18
+  - key: event:/SFX/Character/Interactions/ItemPickup
+    index: 19
+  - key: event:/SFX/Ambience/Fische
+    index: 20
+  - key: event:/SFX/UI/Teleport
+    index: 21
+  - key: event:/SFX/Character/Interactions/PlayerDeathSound
+    index: 22
 --- !u!114 &101554707259681888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2404,6 +2530,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 939
+--- !u!114 &1289930655983549461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/SFX/Ambience/V\xF6gelZwitschernWald"
+  m_EditorClassIdentifier: 
+  Path: "event:/SFX/Ambience/V\xF6gelZwitschernWald"
+  Guid:
+    Data1: -2040949755
+    Data2: 1326544527
+    Data3: 1261569973
+    Data4: -1721750514
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 141675
 --- !u!114 &1342239460519348083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3103,6 +3256,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5298247730689481108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Teleport
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Teleport
+  Guid:
+    Data1: 1453297613
+    Data2: 1205380380
+    Data3: 264947643
+    Data4: -1920504542
+  Banks:
+  - {fileID: 7293655377649464977}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
 --- !u!114 &5508134865785939527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3380,7 +3560,7 @@ MonoBehaviour:
   Name: surface
   StudioPath: 
   Min: 0
-  Max: 3
+  Max: 4
   Default: 0
   ID:
     data1: 2231515932
@@ -3392,6 +3572,7 @@ MonoBehaviour:
   - Dirt
   - Sand
   - Stone
+  - Wood
   Exists: 1
 --- !u!114 &6972373584867174593
 MonoBehaviour:
@@ -3491,10 +3672,10 @@ MonoBehaviour:
   Path: ../../Sounddesign/The Living Harvest/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639235485619136761
+  lastModified: 639236221621074167
   FileSizes:
   - Name: Desktop
-    Value: 8354112
+    Value: 13638784
   Exists: 1
 --- !u!114 &7306092131851469781
 MonoBehaviour:

@@ -4,5 +4,6 @@ public enum Area
 {
     Grass,
     Dirt,
-    Sand
+    Sand,
+    Wood
 }

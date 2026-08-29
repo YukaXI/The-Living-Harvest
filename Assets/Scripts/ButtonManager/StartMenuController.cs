@@ -6,7 +6,7 @@ public class StartMenuController : MonoBehaviour
     public GameObject CreditsMenu;
 public void OnStartClick()
 {
-    SceneManager.LoadScene("Test");  //("..") Scene eingeben in die man rein alden will
+    SceneManager.LoadScene("Level1Village");  //("..") Scene eingeben in die man rein alden will
 }
 
 public void OnExitClick()
