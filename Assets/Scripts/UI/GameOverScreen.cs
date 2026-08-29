@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using FMODUnity;
+
 
 public class GameOverScreen : MonoBehaviour
 {
@@ -19,11 +21,12 @@ public class GameOverScreen : MonoBehaviour
     public void ShowGameOverScreen()
     {
         StartCoroutine(ShowRoutine());
+
     }
     
     private IEnumerator ShowRoutine()
     {
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSecondsRealtime(0f);
         
         Time.timeScale = 0;
         
