@@ -1,10 +1,13 @@
+using System;
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class StartMenuController : MonoBehaviour
 {
-    public GameObject CreditsMenu;
-public void OnStartClick()
+    public void OnStartClick()
 {
     SceneManager.LoadScene("Level1Village");  //("..") Scene eingeben in die man rein alden will
 }

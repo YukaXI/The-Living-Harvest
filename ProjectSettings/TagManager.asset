@@ -11,6 +11,7 @@ TagManager:
   - Walter
   - Minzy
   - Penny
+  - BossHealthBar
   layers:
   - Default
   - TransparentFX

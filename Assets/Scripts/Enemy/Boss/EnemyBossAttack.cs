@@ -25,29 +25,6 @@ public class EnemyBossAttack : MonoBehaviour
         _anim = GetComponent<Animator>();
     }
 
-    private void Update()
-    {
-        if (_enemyBossMovement.facingDirectionY == 1)
-        {
-            attackPoint.localPosition = new Vector3(0, attackPointOffset, 0);
-        }
-        
-        else if (_enemyBossMovement.facingDirectionY == -1) 
-        {
-            attackPoint.localPosition = new Vector3(0, -attackPointOffset, 0);
-        }
-        
-        else if (_enemyBossMovement.facingDirectionX == 1) 
-        {
-            attackPoint.localPosition = new Vector3(attackPointOffset, 0, 0);
-        }
-        
-        else if (_enemyBossMovement.facingDirectionX == -1) 
-        {
-            attackPoint.localPosition = new Vector3(attackPointOffset, 0, 0);
-        }
-    }
-
     public void EnemyAttackMethod()
     {
         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, playerLayer);
