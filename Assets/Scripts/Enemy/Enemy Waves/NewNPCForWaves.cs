@@ -78,6 +78,11 @@ public class NewNPCForWaves : MonoBehaviour, IInteractable
 
     public void StartDialogue()
     {
+        if (dialogueUI == null)
+        {
+            dialogueUI = DialogueController.Instance;
+        }
+        
         StopAllCoroutines();
 
         isDialogueActive = true;
