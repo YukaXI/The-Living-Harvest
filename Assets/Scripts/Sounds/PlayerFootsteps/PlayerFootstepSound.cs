@@ -70,7 +70,12 @@ public class PlayerFootstepSound : MonoBehaviour
 
     private void PriorityExit()
     {
-        _footstepSoundAreas.RemoveAt(_currentPriority);
+        if (_currentPriority < 0) return;
+
+        if (_currentPriority < _footstepSoundAreas.Count)
+        {
+            _footstepSoundAreas.RemoveAt(_currentPriority);
+        }
         _currentPriority --;
     }
 }
