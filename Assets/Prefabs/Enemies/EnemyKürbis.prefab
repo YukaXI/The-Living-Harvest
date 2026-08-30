@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1345803297697350399}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1, y: 0.98, z: 0}
+  m_LocalPosition: {x: -0.1, y: 1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -456,10 +456,10 @@ MonoBehaviour:
   rb: {fileID: 8897854431902330041}
   speed: 1
   _enemyAnimationState: 0
-  attackRange: 3.57
+  attackRange: 3.2
   attackCooldown: 1.58
   stoppingPoint: {fileID: 4196879406363142101}
-  stoppingDistance: 1.78
+  stoppingDistance: 2.3
   facingDirectionX: -1
   facingDirectionY: 0
   target: {fileID: 0}
@@ -478,7 +478,7 @@ MonoBehaviour:
   damage: 10
   attackPoint: {fileID: 6593292264355496715}
   attackPointOffset: 0
-  weaponRange: 1.96
+  weaponRange: 2.13
   playerLayer:
     serializedVersion: 2
     m_Bits: 8192
@@ -899,7 +899,7 @@ GameObject:
   - component: {fileID: 3075748648999046478}
   m_Layer: 12
   m_Name: CanvasEnemyBossHealthBar
-  m_TagString: Boss
+  m_TagString: BossHealthBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1028,7 +1028,7 @@ Transform:
   m_GameObject: {fileID: 9061063232341058418}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1, y: 0.97, z: 0}
+  m_LocalPosition: {x: -0.1, y: 1.0699999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

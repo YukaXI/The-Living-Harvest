@@ -21,7 +21,7 @@ public class EnemyBossHealth : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         _enemyHealthBar = GetComponentInChildren<EnemyHealthBar>();
         _bossHealthBar = FindAnyObjectByType<EnemyBossHealthBar>();
-        _bossHealthBarGM = GameObject.FindGameObjectWithTag("Boss");
+        _bossHealthBarGM = GameObject.FindGameObjectWithTag("BossHealthBar");
     }
 
     public void ChangeHealth(int amount)
@@ -50,6 +50,7 @@ public class EnemyBossHealth : MonoBehaviour
     
     private void DestroyEnemy()
     {
+        Debug.Log("DestroyEnemy wurde aufgerufen von:\n" + System.Environment.StackTrace);
         Destroy(this.gameObject);
     }
 
