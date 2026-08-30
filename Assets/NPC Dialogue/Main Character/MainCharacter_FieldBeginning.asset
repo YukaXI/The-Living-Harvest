@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3def7a74519455a4094adaf071a8bebd, type: 3}
   m_Name: MainCharacter_FieldBeginning
   m_EditorClassIdentifier: 
-  npcName: Magier
+  npcName: Meister Biko
   npcPortrait: {fileID: 0}
   dialogueLines:
   - Ich werde dieses Dorf auch befreien.
   - Wenn ich den Kern des Zaubers immer weiter dezimiere,
-  - dann werde ich den Fluch, den ich dieser Welt auferlegt habe aufheben
+  - dann werde ich den Fluch, den ich dieser Welt auferlegt habe aufheben.
   autoProgressLines: 010101
   endDialogueLines: 000000
   autoProgressDelay: 1.5

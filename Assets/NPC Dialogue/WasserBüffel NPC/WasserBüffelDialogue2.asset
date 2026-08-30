@@ -17,8 +17,8 @@ MonoBehaviour:
   dialogueLines:
   - Du hast mir ja wirklich einen geholt.
   - Wie lieb.
-  - "\xC4hh ja gut du kannst weitergehen"
-  - "Jetzt werde blo\xDF nicht frech"
+  - "\xC4hh ja gut du kannst weitergehen."
+  - "Jetzt werde blo\xDF nicht frech."
   autoProgressLines: 01010100
   endDialogueLines: 00000101
   autoProgressDelay: 1.5

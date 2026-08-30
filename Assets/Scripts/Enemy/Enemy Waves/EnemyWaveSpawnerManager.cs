@@ -19,7 +19,7 @@ public class EnemyWaveSpawnerManager : MonoBehaviour
     public GameObject _triggerDialogue3GM;
     public GameObject _triggerDialogue4GM;
     public GameObject _triggerDialogue5GM;
-
+    
     private void Start()
     {
         //_triggerDialogue1GM.SetActive(true);
@@ -34,6 +34,7 @@ public class EnemyWaveSpawnerManager : MonoBehaviour
         _spawner1.waveOne = true;
         _spawner2.waveOne = true;
         _spawner3.waveOne = true;
+        _triggerDialogue1.enabled = false;
     }
 
     public void WaveActiveTwo()
@@ -41,6 +42,7 @@ public class EnemyWaveSpawnerManager : MonoBehaviour
         _spawner1.waveTwo = true;
         _spawner2.waveTwo = true;
         _spawner3.waveTwo = true;
+        _triggerDialogue2.enabled = false;
     }
     
     public void WaveActiveThree()
@@ -48,14 +50,17 @@ public class EnemyWaveSpawnerManager : MonoBehaviour
         _spawner1.waveThree = true;
         _spawner2.waveThree = true;
         _spawner3.waveThree = true;    
+        _triggerDialogue3.enabled = false;
     }
 
     public void WaveActiveBoss()
     {
         _spawner1.waveFour = true;
-        _spawner2.enabled = false;
-        _spawner3.enabled = false;
+        _spawner2.waveFour = true;
+        _spawner3.waveFour = true;
+        _triggerDialogue4.enabled = false;
     }
+    
     
     public void BossDefeated()
     {

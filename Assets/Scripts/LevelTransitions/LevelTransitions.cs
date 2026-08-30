@@ -44,6 +44,7 @@ public class LevelTransitions : MonoBehaviour
     public void LevelFadeBrightOut()
     {
         anim.SetTrigger("fadeAfter");
+        _waveSpawnerManager._triggerDialogue5.enabled = false;
     }
     
     public void DialogueStart()

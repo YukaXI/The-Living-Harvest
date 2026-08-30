@@ -258,7 +258,6 @@ GameObject:
   - component: {fileID: 5738802176617796277}
   - component: {fileID: 6050707041387990211}
   - component: {fileID: 7798769872777163689}
-  - component: {fileID: 4567129680493339588}
   - component: {fileID: 696444424906131812}
   m_Layer: 12
   m_Name: "EnemyK\xFCrbis"
@@ -459,7 +458,7 @@ MonoBehaviour:
   attackRange: 3.2
   attackCooldown: 1.58
   stoppingPoint: {fileID: 4196879406363142101}
-  stoppingDistance: 2.3
+  stoppingDistance: 2.45
   facingDirectionX: -1
   facingDirectionY: 0
   target: {fileID: 0}
@@ -478,22 +477,10 @@ MonoBehaviour:
   damage: 10
   attackPoint: {fileID: 6593292264355496715}
   attackPointOffset: 0
-  weaponRange: 2.13
+  weaponRange: 2.65
   playerLayer:
     serializedVersion: 2
     m_Bits: 8192
---- !u!114 &4567129680493339588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5195103052089416975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ed05574b78443143b7b1d2aa1013f2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &696444424906131812
 MonoBehaviour:
   m_ObjectHideFlags: 0

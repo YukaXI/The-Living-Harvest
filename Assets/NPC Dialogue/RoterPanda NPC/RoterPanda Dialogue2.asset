@@ -15,7 +15,7 @@ MonoBehaviour:
   npcName: Penny
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - "H\xE4tte nicht gedacht, dass du wirklich was bekommst."
+  - "H\xE4tte nicht gedacht, dass sie dir wirklich was gibt."
   - Naja. Ein Deal ist ein Deal...
   - Hier dein Muffin.
   autoProgressLines: 010101
