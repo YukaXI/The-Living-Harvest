@@ -15,7 +15,7 @@ MonoBehaviour:
   npcName: "B\xFCrgermeister"
   npcPortrait: {fileID: -7419037729872503045, guid: 0c739c3b79ce1f24c94d48c5514b4299, type: 3}
   dialogueLines:
-  - "Du bist derjenige, der f\xFCr all das hier Verantwortlich ist oder?"
+  - "Du bist derjenige, der f\xFCr all das hier verantwortlich ist oder?"
   - Beweise mir, dass du aus guten Absichten hier bist und hilf unser Dorf.
   - Das Feld befindet sich oben.
   - "Auf dem H\xFCgel direkt neben dem Verkaufsstand."
