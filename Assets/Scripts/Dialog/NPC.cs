@@ -39,7 +39,6 @@ public class NPC : MonoBehaviour, IInteractable
    [SerializeField] private CircleCollider2D martaCircleCollider;
    [SerializeField] private CircleCollider2D walterCircleCollider;
    [SerializeField] private CircleCollider2D pennyCircleCollider;
-   [SerializeField] private CircleCollider2D anyaCircleCollider;
 
    [SerializeField] private GameObject _questManagerGM;
    
@@ -56,7 +55,6 @@ public class NPC : MonoBehaviour, IInteractable
        martaCircleCollider.enabled  = false;
        walterCircleCollider.enabled = false;
        pennyCircleCollider.enabled  = false;
-       anyaCircleCollider.enabled   = false;
        
    }
    private void Update()

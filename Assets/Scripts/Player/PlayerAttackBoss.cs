@@ -24,7 +24,7 @@ public class PlayerAttackBoss : MonoBehaviour
         if (enemies.Length > 0 && enemies[0].CompareTag("Boss"))
         {
             enemies[0].GetComponent<EnemyBossHealth>().ChangeHealth(-_playerMovement.damage);
-            enemies[0].GetComponent<EnemyBossKnockback>().Knockback(transform, _knockbackForce, stunTime);
+            //enemies[0].GetComponent<EnemyBossKnockback>().Knockback(transform, _knockbackForce, stunTime);
             Debug.Log("Enemie Damaged");
         }
     }

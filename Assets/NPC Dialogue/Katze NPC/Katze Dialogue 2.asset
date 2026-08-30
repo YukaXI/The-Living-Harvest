@@ -16,7 +16,7 @@ MonoBehaviour:
   npcPortrait: {fileID: 0}
   dialogueLines:
   - Jaaa genau das!
-  - Hier dein Mehl
+  - Hier dein Mehl.
   autoProgressLines: 0101
   endDialogueLines: 
   autoProgressDelay: 1.5

@@ -15,7 +15,7 @@ MonoBehaviour:
   npcName: Penny
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - "Die B\xE4kerei hat f\xFCr dich geschlossen"
+  - "Die B\xE4kerei hat f\xFCr dich geschlossen."
   autoProgressLines: 01
   endDialogueLines: 01
   autoProgressDelay: 1.5

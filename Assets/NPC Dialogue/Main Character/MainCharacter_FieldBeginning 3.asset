@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3def7a74519455a4094adaf071a8bebd, type: 3}
   m_Name: MainCharacter_FieldBeginning 3
   m_EditorClassIdentifier: 
-  npcName: Magier
+  npcName: Meister Biko
   npcPortrait: {fileID: 0}
   dialogueLines:
   - Oh Gott.
