@@ -18,8 +18,8 @@ MonoBehaviour:
   - Kennen wir uns? Du kommst mir bekannt vor.
   - Hm. Wie kann ich helfen?
   - Klar, wenn du mir mein Buch vom Steg am Teich holst.
-  autoProgressLines: 
-  endDialogueLines: 010101
+  autoProgressLines: 000000
+  endDialogueLines: 000000
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
