@@ -17,8 +17,8 @@ MonoBehaviour:
   dialogueLines:
   - "Ich habe nur noch drei D\xF6rfer vor mir."
   - Ich werde es schaffen!
-  autoProgressLines: 0101
-  endDialogueLines: 0000
+  autoProgressLines: 0000
+  endDialogueLines: 0101
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
@@ -26,4 +26,10 @@ MonoBehaviour:
   portraits:
   - {fileID: -7608817372511424353, guid: 9a16d7e5add0f6747aa2230884879195, type: 3}
   - {fileID: -6614343412539366782, guid: 9a16d7e5add0f6747aa2230884879195, type: 3}
-  choices: []
+  choices:
+  - dialogueIndex: 0
+    choices: []
+    nextDialogueIndexes: 
+  - dialogueIndex: 0
+    choices: []
+    nextDialogueIndexes: 
