@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5d57570e1050a8741a28fef730d638cc
+guid: 5722714ae186c424fb0b41d68437e26b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2200720343982342771
-    second: WegWeiser_0
+      213: 5692639715252804489
+    second: Baum_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WegWeiser_0
+      name: Baum_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 13
+        y: 24
         width: 64
-        height: 51
+        height: 104
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,20 +128,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8df4fec1887571e0800000000000000
-      internalID: -2200720343982342771
+      spriteID: 98b9cedf8a1500f40800000000000000
+      internalID: 5692639715252804489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WegWeiser_1
+      name: Baum_1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
-        height: 13
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c190c9f7e0b6d39448d2ea1a5418a633
-      internalID: -25029853
+      spriteID: dc6f836e223b4a54f88e65256d1769fa
+      internalID: 831935638
       vertices: []
       indices: 
       edges: []
@@ -160,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 28e95f2fa1c0d2d4ea79187aeff2cb62
+    spriteID: d5cd0d83c28ffc144914a4f51152e8c0
     internalID: 0
     vertices: []
     indices: 
@@ -170,10 +170,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":2.0},"gridSpriteSize":{"x":64.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":2.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      WegWeiser_0: -2200720343982342771
-      WegWeiser_1: -25029853
+      Baum_0: 5692639715252804489
+      Baum_1: 831935638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
